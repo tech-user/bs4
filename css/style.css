@@ -19,11 +19,15 @@ h2{
 }
 
 h3 {
-  color:#0073b7;
+  color:#fa7073;
 
 }
 h4 {
-  color:#fa7073;
+
+
+color:#0073b7;
+  /* color:#0073b7;*/
+
 }
 
 /* hr{
@@ -59,6 +63,7 @@ color:#a93f55;
 font-family: monospace;
 }
 
+/*
 table, th, td {
     border: 1px solid #33363b;
     border-collapse: collapse;
@@ -70,7 +75,7 @@ th {
   font-family: sans-serif;
   color: #d74022;
 }
-
+*/
 .notes{
 width: 800px;
 height: auto;
@@ -81,7 +86,7 @@ text-wrap:normal;
 
 
 }
-
+/*
 .codeblock{
   width: 600px;
   height: auto;
@@ -89,6 +94,4 @@ text-wrap:normal;
   background-color:#ffffff;
   border-left: 6px solid #4caf50;
   /* opacity: 0.5;
-  filter: alpha(opacity=50);*/
-
-}
+  filter: alpha(opacity=50);*/ */

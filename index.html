@@ -8,14 +8,15 @@
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to Bootstrap 4.</h1>
+    <h1 class="text-center">Welcome to Bootstrap 4.</h1>
     <br>
     <hr>
-
+      <h3>Chapter-1</h3>
+<hr>
       <h2>What is Bootstrap?</h2>
       <ul>
         <li>Bootstrap is a free front-end framework for faster and easier web development</li>
@@ -31,7 +32,7 @@
 Responsive web design is about creating web sites which automatically adjust themselves to look good on all devices, from small phones to large desktops.</div>
 
 <br>
-<h3>Bootstrap 3 vs. Bootstrap 4</h3>
+<h4>Bootstrap 3 vs. Bootstrap 4</h4>
 <p>Bootstrap 4 is the newest version of Bootstrap; with new components, faster stylesheet and more responsiveness.</p>
 <p>Bootstrap 4 supports the latest, stable releases of all major browsers and platforms. However, Internet Explorer 9 and down is not supported.</p>
 
@@ -46,7 +47,7 @@ Responsive web design is about creating web sites which automatically adjust the
 <h5>MaxCDN:</h5>
 
 <br>
-<h3>Containers</h3>
+<h4>Containers</h4>
 <ul>
 <li>The <code>.container</code> class provides a responsive fixed width container</li>
 <li>The <code>.container-fluid</code> class provides a full width container, spanning the entire width of the viewport</li>
@@ -60,8 +61,10 @@ Responsive web design is about creating web sites which automatically adjust the
 
 Many users already have downloaded Bootstrap 4 from MaxCDN when visiting another site. As a result, it will be loaded from cache when they visit your site, which leads to faster loading time. Also, most CDN's will make sure that once a user requests a file from it, it will be served from the server closest to them, which also leads to faster loading time.</div>
 
-
+<br><br><br><br><br>
 <hr>
+    <h3>Chapter-2</h3>
+    <hr><br>
     <h2>Bootstrap 4 Grids</h2>
     <p>Bootstrap's grid system is built with flexbox and allows up to 12 columns across the page. If you do not want to use all</p>
      <p> 12 columns individually, you can group the columns together to create wider columns</p>
@@ -73,7 +76,7 @@ Many users already have downloaded Bootstrap 4 from MaxCDN when visiting another
 <div class="notes">Make sure that the sum adds up to 12 or fewer (it is not required that you use all 12 available columns).</div>
 
 <br><br>
-<h2>Grid Classes</h2>
+<h4>Grid Classes</h4>
 <p><strong>The Bootstrap 4 grid system has five classes:</strong></p>
 
 <ul>
@@ -85,17 +88,720 @@ Many users already have downloaded Bootstrap 4 from MaxCDN when visiting another
 </ul>
 <br>
 
-<h3>Basic Structure of a Bootstrap 4 Grid</h3>
+<h4>Basic Structure of a Bootstrap 4 Grid</h4>
+
+
+<div class="row">
+    <div class="col-*-*"></div>
+    <div class="col-*-*"></div>
+</div> <!-- row -->
+
+<br>
+<h4 class="example">Example</h4>
+<p><img src="assets/bscolrows.png" alt="" width="automatically" height="automatically"></p>
+
+<br>
+
+<p>First example: create a row (<code>div class="row"</code>). Then, add the desired number of columns (tags with appropriate <code>.col-*-*</code> classes). The first star (*) represents the responsiveness: sm, md, lg or xl, while the second star represents a number, which should add up to 12 for each row.</p>
+
+<p>Second example: instead of adding a number to each <code>col</code>, let bootstrap handle the layout, to create equal width columns: two <code>col</code> elements = 50% width to each col. three cols = 33.33% width to each col. four cols = 25% width, etc. You can also use <code>.col-sm|md|lg|xl</code> to make the columns responsive.</p>
+
+<br>
+
+<h4>Three Equal Coloumns</h4>
+
+<h5 class="example">Example</h5>
+
+<div class="row">
+    <div class="col" style="background-color:lavender;">col-1</div>
+    <div class="col" style="background-color:orange;">col-2</div>
+    <div class="col" style="background-color:lightgreen;">col-3</div>
+
+</div>
+
+<br><br>
+<h4>Responsive Columns</h4>
+<h5 class="example">Example</h5>
+
+<div class="row">
+     <div class="col-sm-3" style="background-color:lightgreen;">.col-sm-3</div>
+     <div class="col-sm-3" style="background-color:lightblue;">.col-sm-3</div>
+     <div class="col-sm-3" style="background-color:lavender;">.col-sm-3</div>
+     <div class="col-sm-3" style="background-color:lavenderblush;">.col-sm-3</div>
+</div>
+
+<br>
+<br>
+
+<h4>Two Unequal Responsive Columns</h4>
+
+<h5 class="example">Example</h5>
+<div class="row">
+    <div class="col-sm-4" style="background-color:lavender">.col-sm-4</div>
+    <div class="col-sm-8" style="background-color:lavenderblush">.col-sm-8</div>
+
+</div>
+
+<br><br><br><br><br>
+<hr>
+<h3>Chapter-3</h3>
+<hr><br>
+<h2>Bootstrap 4 Text/Typography</h2>
+<br>
+<h4>Bootstrap 4 Default Settings</h4><br>
+<p>Bootstrap 4 uses a default <code>font-size</code> of 16px, and its <code>line-height</code> is 1.5.</p>
+<p>The default <code>font-family</code> is "Helvetica Neue", Helvetica, Arial, sans-serif.
+</p>
+<p>In addition, all <code>&lt;p&gt;</code> elements have <code>margin-top: 0</code> and <code>margin-bottom: 1rem</code> (16px by default).</p>
+
+<br>
+<h4>&lt;h1&gt; - &lt;h6&gt;</h4>
+<p>Bootstrap 4 styles HTML headings (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>)  with a bolder font-weight and an increased font-size:</p>
+
+<br>
+<h5 class="example">Example</h5>
+
+  <h1>h1 Bootstrap heading (2.5rem = 40px)</h1>
+  <h2>h2 Bootstrap heading (2rem = 32px)</h2>
+ <h3>h3 Bootstrap heading (1.75rem = 28px)</h3>
+ <h4>h4 Bootstrap heading (1.5rem = 24px)</h4>
+ <h5>h5 Bootstrap heading (1.25rem = 20px)</h5>
+ <h6>h6 Bootstrap heading (1rem = 16px)</h6>
+
+
+<br><br>
+
+<h4>Display Headings</h4> <br>
+<p>Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight), and there are four classes to choose from: <code>.display-1</code>, <code>.display-2</code>, <code>.display-3</code>, <code>.display-4</code></p>
+
+<br><br>
+  <h1 class="display-1">Display 1</h1>
+  <h1 class="display-2">Display 2</h1>
+  <h1 class="display-3">Display 3</h1>
+  <h1 class="display-4">Display 4</h1>
+
+<br><br>
+
+<h4>&lt;small&gt;</h4>
+<p>In Bootstrap 4 the HTML <code>&lt;small&gt;</code> element is used to create a lighter, secondary text in any heading:</p>
+
+<h5 class="example">Example</h5>
+
+<br>
+<h1>Lighter, Secondary Text</h1>
+  <p>The small element is used to create a lighter, secondary text in any heading:</p>
+  <h1>h1 heading <small>secondary text</small></h1>
+  <h2>h2 heading <small>secondary text</small></h2>
+  <h3>h3 heading <small>secondary text</small></h3>
+  <h4>h4 heading <small>secondary text</small></h4>
+  <h5>h5 heading <small>secondary text</small></h5>
+  <h6>h6 heading <small>secondary text</small></h6>
+
+
+<br><br>
+
+<h4>&lt;mark&gt;</h4>
+
+<p>Bootstrap 4 will style the HTML <code>&lt;mark&gt;</code> element with a yellow background color and some padding:</p><br>
+<h5 class="example">Example</h5><br>
+<p>Use the mark element to <mark>highlight</mark> text.</p>
+
+<br>
+<h4>&lt;dl&gt;</h4>
+<p>Bootstrap 4 will style the HTML <code>&lt;dl&gt;</code> element in the following way:</p>
+<h5 class="example">Example</h5>
+
+  <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>
+
+<br>
+<h4>&lt;kbd&gt;</h4>
+<p>Bootstrap 4 will style the HTML <code>&lt;kbd&gt;</code> element in the following way:</p>
+
+<h5 class="example">Example</h5>
+
+<p>Use <kbd>ctrl + p</kbd> to open the print dialog box.</p>
+
+<br>
+<h4>More Typography Classes....</h4>
+<p>The Bootstrap 4 classes below can be added to style HTML elements further:</p>
+
+<table class="table table-bordered">
+  <tr>
+    <th style="width:25%;">Class</th>
+    <th style="width:63%;">Description</th>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.font-weight-bold</code></td>
+    <td>Bold text</td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.font-italic</code></td>
+    <td>Italic text</td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.font-weight-light</code></td>
+    <td>Light weight text</td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.font-weight-normal</code></td>
+    <td>Normal text</td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.lead</code></td>
+    <td>Makes a paragraph stand out</td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.small</code></td>
+    <td>Indicates smaller text (set to 85% of the size of the parent)</td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-left</code></td>
+    <td>Indicates left-aligned text</td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-*-left</code></td>
+    <td>Indicates left-aligned text on small, medium, large or xlarge screens</td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-center</code></td>
+    <td>Indicates center-aligned text</td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-*-center</code></td>
+    <td>Indicates center-aligned text on small, medium, large or xlarge screens</td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-right</code></td>
+    <td>Indicates right-aligned text</td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-*-right</code></td>
+    <td>Indicates right-aligned text on small, medium, large or xlarge screens</td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-justify</code></td>
+    <td>Indicates justified text</td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-monospace</code></td>
+    <td>Monospaced text</td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-nowrap</code></td>
+    <td>Indicates no wrap text</td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-lowercase</code></td>
+    <td>Indicates lowercased text</td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-uppercase</code></td>
+    <td>Indicates uppercased text</td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.text-capitalize</code></td>
+    <td>Indicates capitalized text</td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.initialism</code></td>
+    <td>Displays the text inside an <code class="w3-codespan">&lt;abbr&gt;</code> element in a slightly smaller font size</td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.list-unstyled</code></td>
+    <td>Removes the default list-style and left margin on list items (works on both <code class="w3-codespan">&lt;ul&gt;</code> and <code class="w3-codespan">&lt;ol&gt;</code>). This class only applies to immediate children list items (to remove the default list-style from any nested lists, apply this class to any nested lists as well)</td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.list-inline</code></td>
+    <td>Places all list items on a single line (used together with
+    <code class="w3-codespan">.list-inline-item</code> on each &lt;li&gt; elements)</td>
+  </tr>
+  <tr>
+    <td><code class="w3-codespan">.pre-scrollable</code></td>
+    <td>Makes a <code class="w3-codespan">&lt;pre&gt;</code> element scrollable</td>
+  </tr>
+</table>
+
+<p> <strong>For Complete CSS Reference :-</strong> <a href="bs4-css-ref.html" target="_blank">Click here</a></p>
+
+
+<br><br><br><br><br>
+<hr>
+<h3>Chapter-4</h3>
+<hr><br>
+<h2>Bootstrap 4 Colors</h2>
+<br>
+<h4>Text Colors</h4>
+<p>Bootstrap 4 has some contextual classes that can be used to provide "meaning through colors".</p>
+
+<p>The classes for text colors are: <code>.text-muted</code>,
+<code>.text-primary</code>, <code class="w3-codespan">.text-success</code>, <code>.text-info</code>,
+<code>.text-warning</code>, <code>.text-danger</code>, <code>.text-secondary</code>, <code>.text-white</code>,
+<code>.text-dark</code>, <code>.text-body</code> (default body color/often black) and <code>.text-light</code>:</p>
+<br>
+<h5 class="example">Example</h5><br>
+<p class="text-muted">This text is muted.</p>
+  <p class="text-primary">This text is important.</p>
+  <p class="text-success">This text indicates success.</p>
+  <p class="text-info">This text represents some information.</p>
+  <p class="text-warning">This text represents a warning.</p>
+  <p class="text-danger">This text represents danger.</p>
+  <p class="text-secondary">Secondary text.</p>
+  <p class="text-dark">This text is dark grey.</p>
+  <p class="text-body">Default body color (often black).</p>
+  <p class="text-light">This text is light grey (on white background).</p>
+  <p class="text-white">This text is white (on white background).</p>
+
+<br>
+<p>Contextual text classes can also be used on links, which will add a darker hover color:</p>
+<h5 class="example">Example</h5> <br>
+<h4>Contextual Link Colors</h4>
+  <p>Hover over the links.</p>
+  <a href="#" class="text-muted">Muted link.</a>
+  <a href="#" class="text-primary">Primary link.</a>
+  <a href="#" class="text-success">Success link.</a>
+  <a href="#" class="text-info">Info link.</a>
+  <a href="#" class="text-warning">Warning link.</a>
+  <a href="#" class="text-danger">Danger link.</a>
+  <a href="#" class="text-secondary">Secondary link.</a>
+  <a href="#" class="text-dark">Dark grey link.</a>
+  <a href="#" class="text-body">Body/black link.</a>
+  <a href="#" class="text-light">Light grey link.</a>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h4>Background Colors</h4>
+<p>The classes for background colors are: <code>.bg-primary</code>, <code>
+.bg-success</code>, <code>.bg-info</code>, <code>.bg-warning</code>, <code>.bg-secondary</code>, <code>.bg-dark</code> and <code>.bg-light</code>.</p>
+
+<br>
+<h5 class="example">Example</h5>
+<p>Note that you can also add a <code>.text-*</code> class if you want a different text color:</p>
+  <p class="bg-primary text-white">This text is important.</p>
+  <p class="bg-success text-white">This text indicates success.</p>
+  <p class="bg-info text-white">This text represents some information.</p>
+  <p class="bg-warning text-white">This text represents a warning.</p>
+  <p class="bg-danger text-white">This text represents danger.</p>
+  <p class="bg-secondary text-white">Secondary background color.</p>
+  <p class="bg-dark text-white">Dark grey background color.</p>
+  <p class="bg-light text-dark">Light grey background color.</p>
+
+
+  <br><br><br><br><br>
+  <hr>
+  <h3>Chapter-5</h3>
+  <hr><br>
+  <h2>Bootstrap 4 Tables</h2>
+  <br>
+  <h4>Bootstrap 4 Basic Table</h4>
+
+  <p>A basic Bootstrap 4 table has a light padding and horizontal dividers.<br>
+
+The <code>.table</code> class adds basic styling to a table:</p>
+
+<h5 class="example">Example</h5>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+<br><br>
+
+<h4>Striped Rows</h4>
+<p>The <code>.table-striped</code> class adds zebra-stripes to a table:</p>
+<br>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+<br>
+<h4>Bordered Table</h4>
+<p>The <code>.table-bordered</code> class adds borders on all sides of the table and cells:</p>
+
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+<br>
+
+<h4>Hover Rows</h4>
+<p>The <code>.table-hover</code> class adds a hover effect (grey background color) on table rows:</p>
+
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+  <h4>  Borderless Table</h4>
+<p>The <code>.table-borderless</code> class removes borders from the table:</p>
+
+<table class="table table-borderless">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+<br>
+<h4>Contextual Classes</h4>
+<p>Contextual classes can be used to color the whole table (<code>&lt;table&gt;</code>),&nbsp;
+the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>).</p>
+
+<p>Contextual classes can be used to color the table, table rows or table cells. The classes that can be used are: <code>.table-primary</code>, <code>.table-success</code>, <code>.table-info</code>, <code>.table-warning</code>, <code>.table-danger</code>, <code>.table-active</code>, <code>.table-secondary</code>, <code>.table-light</code>, <code>.table-dark</code>.</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Default</td>
+        <td>Defaultson</td>
+        <td>def@somemail.com</td>
+      </tr>
+      <tr class="table-primary">
+        <td>Primary</td>
+        <td>Joe</td>
+        <td>joe@example.com</td>
+      </tr>
+      <tr class="table-success">
+        <td>Success</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr class="table-danger">
+        <td>Danger</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr class="table-info">
+        <td>Info</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+      <tr class="table-warning">
+        <td>Warning</td>
+        <td>Refs</td>
+        <td>bo@example.com</td>
+      </tr>
+      <tr class="table-active">
+        <td>Active</td>
+        <td>Activeson</td>
+        <td>act@example.com</td>
+      </tr>
+      <tr class="table-secondary">
+        <td>Secondary</td>
+        <td>Secondson</td>
+        <td>sec@example.com</td>
+      </tr>
+      <tr class="table-light">
+        <td>Light</td>
+        <td>Angie</td>
+        <td>angie@example.com</td>
+      </tr>
+      <tr class="table-dark text-dark">
+        <td>Dark</td>
+        <td>Bo</td>
+        <td>bo@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+  
+<h4>Table Head Colors</h4>
+<p>The <code>.thead-dark</code> class adds a black background to table headers, and the <code>.thead-light</code> class adds a grey background to table headers:</p>
+  
+<h5 class="example">Example</h5>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>john@example.com</td>
+    </tr>
+    <tr>
+      <td>Mary</td>
+      <td>Moe</td>
+      <td>mary@example.com</td>
+    </tr>
+    <tr>
+      <td>July</td>
+      <td>Dooley</td>
+      <td>july@example.com</td>
+    </tr>
+  </tbody>
+</table>
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>john@example.com</td>
+    </tr>
+    <tr>
+      <td>Mary</td>
+      <td>Moe</td>
+      <td>mary@example.com</td>
+    </tr>
+    <tr>
+      <td>July</td>
+      <td>Dooley</td>
+      <td>july@example.com</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<br>
+<h4>Small table</h4>
+
+<p>The<code>.table-sm</code> class makes the table smaller by cutting cell padding in half:</p>
+
+<table class="table table-bordered table-sm">
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>john@example.com</td>
+    </tr>
+    <tr>
+      <td>Mary</td>
+      <td>Moe</td>
+      <td>mary@example.com</td>
+    </tr>
+    <tr>
+      <td>July</td>
+      <td>Dooley</td>
+      <td>july@example.com</td>
+    </tr>
+  </tbody>
+</table>
+<br><br>
+
+<h4>Responsive Tables</h4>
+<p>The<code>.table-responsive</code> class creates a responsive table: an horizontal scrollbar is added to the table on screens that
+ are less than 992px wide (if needed). When viewing on anything larger than 992px wide, there is no difference:</p>
+
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+        <th>City</th>
+        <th>Country</th>
+        <th>Sex</th>
+        <th>Example</th>
+        <th>Example</th>
+        <th>Example</th>
+        <th>Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Anna</td>
+        <td>Pitt</td>
+        <td>35</td>
+        <td>New York</td>
+        <td>USA</td>
+        <td>Female</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr
+    </tbody>
+  </table>
+  
+</div>
+
+<br><br>
+<p>You can also decide when the table should get a scrollbar, depending on screen width:</p>
+
+<table class="table table-bordered">
+<th>Class</th>
+<th>Screen width</th>
+
+<tr>
+<td><code>.table-responsive-sm</code>
+</td><td>&lt;576px</td>
+</tr>
+
+
+<tr>
+<td><code>.table-responsive-md</code></td>
+  <td>&lt;768px</td>
+</tr>
+<tr>
+  <td>
+    <code>.table-responsive-lg</code>
+  </td>
+  <td>&lt;992px</td>
+</tr>
+<tr>
+  <td>
+    <code>.table-responsive-xl</code>
+  </td>
+  <td>&lt;1200px</td>
+</tr>
+</table>
 
 
 
 
-
-
-
-
-
-
+</div>
 
 
 
