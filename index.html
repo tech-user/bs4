@@ -635,10 +635,10 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
   </table>
 
   <br>
-  
+
 <h4>Table Head Colors</h4>
 <p>The <code>.thead-dark</code> class adds a black background to table headers, and the <code>.thead-light</code> class adds a grey background to table headers:</p>
-  
+
 <h5 class="example">Example</h5>
 <table class="table">
   <thead class="thead-dark">
@@ -764,7 +764,7 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
       </tr
     </tbody>
   </table>
-  
+
 </div>
 
 <br><br>
@@ -798,17 +798,277 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
 </tr>
 </table>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<h3>Chapter-6</h3>
+<hr>
+<br>
+<h2>Bootstrap 4 Images</h2>
+<br>
+<h4>Rounded Corners</h4>
+<p>The  <code>.rounded</code> class adds rounded corners to an image:</p>
+<p><img src="assets/sample-1.jpg" alt="" width="400" height="300" class="rounded"></p>
+<br><br>
+<h4>Circle</h4>
+<p> The <code>.rounded-circle</code> class shapes the image to a circle:</p>
+
+<img src="assets/sample-2.jpg" alt="" class="rounded-circle" width="400" height="400">
+
+<br>
+<br>
+<br>
+<h4>Thumbnail</h4>
+<p><code>.img-thumbnail</code> class shapes the image to a thumbnail(Bordered).</p>
+
+<img src="assets/sample-1.jpg" alt="" width="400" height="300" class="img-thumbnail">
+<br>
+<br>
+<br>
+<h4>Aligning Images</h4>
+
+<p>Float an image to the right with the <code>.float-right</code> class or to the left with <code>.float-left</code>.</p>
+
+<p><img src="assets/sample-1.jpg" alt="" width="300" height="200" class="float-right"></p>
+<p> <img src="assets/sample-2.jpg" alt="" width="300" height="200" class="float-left"></p>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<h4>Centered Image</h4>
+<p>Center an image by adding the utility classes<code>.mx-auto</code>(margin:auto) and<code>.d-block</code> (display:block) to the image.</p>
+
+<h5 class="example">Example</h5>
+
+<img src="assets/sample-2.jpg" alt="" width="400" height="300" class="mx-auto d-block">
+
+<br>
+<br>
+<br>
+<h4>Responsive Images</h4>
+<p>Images come in all sizes. So do screens. Responsive images automatically adjust to fit the size of the screen. </p>
+
+<p>Create responsive images by adding an
+  <code>.img-fluid</code> class to the<code>&lt;img&gt;</code> tag. The image will then scale nicely to the parent element.</p>
+
+<p>The<code>.img-fluid</code> class applies
+<code> max-width: 100%;</code> and <code>height: auto;</code> to the image:</p>
+
+<h5 class="example">Example</h5>
+<p> <img src="assets/sample-1.jpg" alt="" class="img-fluid"></p>
 
 
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<h3>Chapter-7</h3>
+<hr>
+<br>
+<h2>Bootstrap 4 Jumbotron</h2>
+<br>
+<h4>Jumbotron</h4>
+<p>A jumbotron indicates a big grey box for calling extra attention to some special content or information.</p>
+<p><span class="spl">Tip:</span> Inside a jumbotron you can put nearly any valid HTML, including other Bootstrap elements/classes.</p>
+
+<br>
+<div class="jumbotron">
+<h1>Bootstrap Tutorial</h1>
+<p>Bootstrap is the most popular HTML, CSS, JavaScript front-end Framework..</p>
+<button type="button" class="btn btn-info">Learn more</button>
+</div>
+<br><br>
+<h4>Full-width Jumbotron</h4>
+
+<p>If you want a full-width jumbotron without rounded borders, add the
+<code>.jumbotron-fluid</code> class and a <code>.container</code> or
+<code>.container-fluid</code> inside of it:</p>
+
+<br>
+<h5 class="example">Example</h5>
+
+<div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h2 class="display-4">BootStrap Tutorials</h2>
+            <p>Bootstrap is the most popular HTML, CSS, JavaScript front-end Framework..</p>
+        </div>
+
+</div><!-- Jumbotron fluid end-->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<h3>Chapter-8</h3>
+<hr>
+<br>
+<h2>Bootstrap 4 Alerts</h2>
+<br>
+<h4>Alert Messages</h4>
+<p>Bootstrap 4 provides an easy way to create predefined alert messages:</p>
+
+<p>Alerts are created with the <code>.alert</code> class, followed by one of the contextual classes <code>.alert-success</code>, <code>.alert-info</code>,<code>.alert-warning</code>,
+  <code>.alert-danger</code>, <code>.alert-primary</code>,
+  <code>.alert-secondary</code>, <code>.alert-light</code> or <code>.alert-dark</code>:</p>
+
+<h5 class="example">Example</h5>
+
+<div class="alert alert-success">
+  <strong>Success!</strong> This alert box could indiciate a successful or positive action.</div>
+<div class="alert alert-info">
+  <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+</div>
+<div class="alert alert-warning">
+  <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+</div>
+<div class="alert alert-danger">
+  <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+</div>
+<div class="alert alert-primary">
+  <strong>Primary!</strong> Indicates an important action.
+</div>
+<div class="alert alert-secondary">
+  <strong>Secondary!</strong> Indicates a slightly less important action.
+</div>
+<div class="alert alert-dark">
+  <strong>Dark!</strong> Dark grey alert.
+</div>
+<div class="alert alert-light">
+  <strong>Light!</strong> Light grey alert.
+</div>
+
+<br>
+<br>
+<h4>Alert Links</h4>
+<p>Add the <code>.alert-link</code> class to any links inside the alert box to create "matching colored links":</p>
+
+<h5 class="example">Example</h5>
+<div class="alert alert-success"><strong>Success!</strong> You should
+  <a href="#" class="alert-link">read this message</a>.</div>
+<div class="alert alert-info"><strong>Info!</strong> You should <a href="#" class="alert-link">read this message</a>.</div>
+<div class="alert alert-warning"><strong>Warning!</strong> You should
+  <a href="#" class="alert-link">read this message</a>.</div>
+<div class="alert alert-danger"><strong>Danger!</strong> You should
+  <a href="#" class="alert-link">read this message</a>.</div>
+<div class="alert alert-primary"><strong>Primary!</strong> You should
+  <a href="#" class="alert-link">read this message</a>.</div>
+<div class="alert alert-secondary"><strong>Secondary!</strong> You should<a href="#" class="alert-link">read this message</a>.</div>
+<div class="alert alert-dark"><strong>Dark!</strong> You should<a href="#" class="alert-link">read this message</a>.</div>
+<div class="alert alert-light"><strong>Light!</strong> You should<a href="#" class="alert-link">read this message</a>.</div>
+
+
+<br>
+<br>
+<h4>Closing Alerts</h4>
+<br>
+<p>To close the alert message, add a
+  <code>.alert-dismissible</code> class to the alert container. Then add
+<code>class="close"</code> and<code> data-dismiss="alert"</code> to a link or a button element (when you click on this the alert box will disappear).</p>
+
+<h5 class="example">Example</h5>
+<div class="alert alert-success alert-dismissible">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Success!</strong> This alert box could indicate a successful or positive action.
+</div>
+<div class="alert alert-info alert-dismissible">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+</div>
+<div class="alert alert-warning alert-dismissible">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+</div>
+<div class="alert alert-danger alert-dismissible">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+</div>
+<div class="alert alert-primary alert-dismissible">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Primary!</strong> Indicates an important action.
+</div>
+<div class="alert alert-secondary alert-dismissible">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Secondary!</strong> Indicates a slightly less important action.
+</div>
+<div class="alert alert-dark alert-dismissible">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Dark!</strong> Dark grey alert.
+</div>
+<div class="alert alert-light alert-dismissible">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Light!</strong> Light grey alert.
 </div>
 
 
+<br>
+<br>
+<h4>Animated Alerts</h4>
+<p>The <code>.fade</code> and  <code>.show</code> classes adds a fading effect when closing the alert message:</p>
+
+<div class="alert alert-danger alert-dismissible fade show">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+<strong>Success!</strong> This alert box could indicate a successful or positive action.
+</div>
+<div class="alert alert-info alert-dismissible fade show">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+</div>
+<div class="alert alert-warning alert-dismissible fade show">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+</div>
+<div class="alert alert-danger alert-dismissible fade show">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+</div>
+<div class="alert alert-primary alert-dismissible fade show">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Primary!</strong> Indicates an important action.
+</div>
+<div class="alert alert-secondary alert-dismissible fade show">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Secondary!</strong> Indicates a slightly less important action.
+</div>
+<div class="alert alert-dark alert-dismissible fade show">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Dark!</strong> Dark grey alert.
+</div>
+<div class="alert alert-light alert-dismissible fade show">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Light!</strong> Light grey alert.
+</div>
+
+
+
+
+
+</div><!-- container end-->
 
 <div style="height:300px;"></div>
-</div>
+
 <hr>
 </body>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
 </html>
