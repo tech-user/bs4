@@ -18,7 +18,7 @@
 <h1 class="text-center">Welcome to Bootstrap 4.</h1>
 <br>
 <br>
-  <h3>Index</h3>
+  <h4>Index</h4>
   <ul>
     <li>Chapter-01 : <a href="#whatisbs">What is BootStrap</a></li>
     <li>Chapter-02 : <a href="#grids">Grids</a></li>
@@ -29,17 +29,17 @@
     <li>Chapter-07 : <a href="#progressbars">Progressbars</a></li>
     <li>Chapter-08 : <a href="#progressbars">Progressbars</a></li>
     <li>Chapter-09 : <a href="#progressbars">Progressbars</a></li>
-    <li>Chapter-10 : <a href="#progressbars">Progressbars</a></li>
+    <li>Chapter-10 : <a href="#badges">Badges</a></li>
     <li>Chapter-11 : <a href="#progressbars">Progressbars</a></li>
     <li>Chapter-12 : <a href="#pagination">Pagination</a></li>
-    <li>Chapter-13 : <a href=""></a></li>
+    <li>Chapter-13 : <a href="#listgroups">List Groups</a></li>
     <li>Chapter-14 : <a href=""></a></li>
     <li>Chapter-15 : <a href=""></a></li>
 
   </ul>
 </div>
 <!-- Index -->
-
+<br>
 
   <div class="container">
     
@@ -1319,7 +1319,7 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
 <br>
 <br>
 <hr>
-<h3>Chapter-10</h3>
+<h3 id="badges">Chapter-10</h3>
 <hr>
 <br>
 <h2>Bootstrap 4 Badges</h2>
@@ -1622,7 +1622,7 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
 
 <h5 class="example">Example</h5>
 <div>
-<p>Large:</p>
+<p><strong>Large:</strong></p>
 <ul class="pagination pagination-lg">
   <li class="page-item">
     <a class="page-link" href="#">Previous</a>
@@ -1641,7 +1641,7 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
   </li>
 </ul>
 
-<p>Default:</p>
+<p><strong>Default:</strong></p>
 <ul class="pagination">
   <li class="page-item">
     <a class="page-link" href="#">Previous</a>
@@ -1660,7 +1660,7 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
   </li>
 </ul>
 
-<p>Small:</p>
+<p><strong>Small:</strong></p>
 <ul class="pagination pagination-sm">
   <li class="page-item">
     <a class="page-link" href="#">Previous</a>
@@ -1751,6 +1751,161 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
   <li class="breadcrumb-item active">Rome</li>
 </ul>
 </div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<h3>Chapter-13</h3>
+<hr>
+<h2 id="listgroups">Bootstrap 4 List Groups</h2>
+<br>
+<h4>Basic List Groups</h4>
+<p>The most basic list group is an unordered list with list items:</p>
+<p>To create a basic list group, use an <code>&lt;ul&gt;</code> element with class <code>.list-group</code>, and <code>&lt;li&gt;</code> elements with class <code>.list-group-item</code>:</p>
+
+<h5 class="example">Example</h5>
+
+<div>
+  <ul class="list-group">
+      <li class="list-group-item">First Item</li>
+      <li class="list-group-item">Second Item</li>
+      <li class="list-group-item">Third Item</li>
+
+  </ul>
+</div>
+
+<br>
+<br>
+<h4>Active State</h4>
+<p>Use the <code>.active</code> class to highlight the current item.</p>
+
+<h5 class="example">Example</h5>
+
+<div>
+  <ul class="list-group">
+    <li class="list-group-item active">Active Item</li>
+    <li class="list-group-item">Second Item</li>
+    <li class="list-group-item">Third Item</li>
+
+  </ul>
+</div>
+
+<br><br>
+
+<h4>List Group With Linked Items</h4>
+<p>To create a list group with linked items, use <code>&lt;div&gt;</code> instead of <code>&lt;ul&gt;</code> and <code>&lt;a&gt;</code> instead of <code>&lt;li&gt;</code>. Optionally, add the <code>.list-group-item-action</code> class if you want a grey background color on hover:</p>
+
+<h5 class="example">Example</h5>
+
+<div class="list-group">
+
+    <a href="#" class="list-group-item list-group-item-action">First Item</a>
+    <a href="#" class="list-group-item list-group-item-action">Second Item</a>
+    <a href="" class="list-group-item list-group-item-action">Third Item</a>
+
+</div>
+
+<br>
+<h4>Disabled Item</h4>
+<p>The <code>.disabled</code> class adds a lighter text color to the disabled item. And when used on links, it will remove the hover effect:</p>
+
+<br>
+<div class="list-group">
+    <a href="#" class="list-group-item disabled">Disabled item</a>
+    <a href="#" class="list-group-item disabled">Disabled item</a>
+    <a href="#" class="list-group-item">Third item</a>
+  </div> 
+
+  <br>
+  <h4>Flush / Remove Borders</h4>
+  <p>Use the <code>.list-group-flush</code> class to remove some borders and rounded corners:</p>
+
+  <br>
+
+
+  <div>
+      <ul class="list-group list-group-flush">
+          <li class="list-group-item">First item</li>
+          <li class="list-group-item">Second item</li>
+          <li class="list-group-item">Third item</li>
+          <li class="list-group-item">Fourth item</li>
+        </ul> 
+  </div>
+
+
+
+  <br>
+  <h4>Contextual Classes</h4>
+<p>Contextual classes can be used to color list items:</p>
+<p>The classes for coloring list-items are: <code>.list-group-item-success</code>, <code>.list-group-item-secondary</code>, <code>.list-group-item-info</code>, <code>.list-group-item-warning</code>, <code>.list-group-item-danger</code>, <code>.list-group-item-dark</code> and <code>.list-group-item-light</code>,:</p>
+
+<h5 class="example">Example</h5>
+
+<div>
+  <ul class="list-group">
+
+    <li class="list-group-item list-group-item-success">Success Item</li>
+    <li class="list-group-item list-group-item-secondary">Secondary Item</li>
+    <li class="list-group-item list-group-item-info">Info Item</li>
+    <li class="list-group-item list-group-item-warning">Warning Item</li>
+    <li class="list-group-item list-group-item-danger">Danger Item</li>
+    <li class="list-group-item list-group-item-dark">Dark Item</li>
+    <li class="list-group-item list-group-item-light">Light Item</li>
+
+  </ul>
+
+
+</div>
+
+<br>
+<h4>Link items with Contextual Classes</h4>
+<br>
+<h5 class="example">Example</h5>
+<div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action">Action item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-success">Success item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Secondary item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-info">Info item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Warning item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Danger item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Primary item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Dark item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Light item</a>
+  </div> 
+
+<br>
+
+<h4>List Group with Badges</h4>
+<p>Combine <code>.badge</code> classes with utility/helper classes to add badges inside the list group:</p>
+<br>
+
+<h5 class="example">Example</h5>
+
+<div>
+    <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Inbox
+          <span class="badge badge-primary badge-pill">12</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Ads
+          <span class="badge badge-primary badge-pill">50</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Junk
+          <span class="badge badge-primary badge-pill">99</span>
+        </li>
+      </ul> 
+</div>
+
+
+
+
+
 
 
 
