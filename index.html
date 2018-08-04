@@ -11,11 +11,40 @@
 
 </head>
 <body>
+
+<!-- Index -->
+
+<div class="container">
+<h1 class="text-center">Welcome to Bootstrap 4.</h1>
+<br>
+<br>
+  <h3>Index</h3>
+  <ul>
+    <li>Chapter-01 : <a href="#whatisbs">What is BootStrap</a></li>
+    <li>Chapter-02 : <a href="#grids">Grids</a></li>
+    <li>Chapter-03 : <a href="#progressbars">Progressbars</a></li>
+    <li>Chapter-04 : <a href="#progressbars">Progressbars</a></li>
+    <li>Chapter-05 : <a href="#progressbars">Progressbars</a></li>
+    <li>Chapter-06 : <a href="#progressbars">Progressbars</a></li>
+    <li>Chapter-07 : <a href="#progressbars">Progressbars</a></li>
+    <li>Chapter-08 : <a href="#progressbars">Progressbars</a></li>
+    <li>Chapter-09 : <a href="#progressbars">Progressbars</a></li>
+    <li>Chapter-10 : <a href="#progressbars">Progressbars</a></li>
+    <li>Chapter-11 : <a href="#progressbars">Progressbars</a></li>
+    <li>Chapter-12 : <a href="#pagination">Pagination</a></li>
+    <li>Chapter-13 : <a href=""></a></li>
+    <li>Chapter-14 : <a href=""></a></li>
+    <li>Chapter-15 : <a href=""></a></li>
+
+  </ul>
+</div>
+<!-- Index -->
+
+
   <div class="container">
-    <h1 class="text-center">Welcome to Bootstrap 4.</h1>
-    <br>
-    <hr>
-      <h3>Chapter-1</h3>
+    
+   <hr>
+<h3 id="whatisbs">Chapter-1</h3>
 <hr>
       <h2>What is Bootstrap?</h2>
       <ul>
@@ -63,7 +92,7 @@ Many users already have downloaded Bootstrap 4 from MaxCDN when visiting another
 
 <br><br><br><br><br>
 <hr>
-    <h3>Chapter-2</h3>
+    <h3 id="grids">Chapter-2</h3>
     <hr><br>
     <h2>Bootstrap 4 Grids</h2>
     <p>Bootstrap's grid system is built with flexbox and allows up to 12 columns across the page. If you do not want to use all</p>
@@ -1363,9 +1392,8 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
 <br>
 <br>
 <hr>
-<h3>Chapter-11</h3>
+<h3 id="progressbars">Chapter-11</h3>
 <hr>
-<br>
 <h2>Bootstrap 4 Progress Bars</h2>
 <br>
 <h4>Basic Progress Bar</h4>
@@ -1507,16 +1535,222 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
 </div>
 
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<h3>Chapter-12</h3>
+<hr>
+<h2 id="pagination">Bootstrap 4 Pagination</h2>
+<br>
+<h4>Basic Pagination</h4>
+<br>
+<p>If you have a web site with lots of pages, you may wish to add some sort of pagination to each page.</p>
+<p>To create a basic pagination, add the <code>.pagination</code> class to an <code>&lt;ul&gt;</code> element. Then add the <code>.page-item</code> to each <code>&lt;li&gt;</code> element and a <code>.page-link</code> class to each link inside <code>&lt;li&gt;</code>:</p>
 
 
+<h5 class="example">Example</h5>
+
+<div>
+      <ul class="pagination">
+
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
 
 
+      </ul>
+
+</div>
+
+<br>
+
+<h4>Active State</h4>
+<p>The <code>.active</code> class is used to "hightlight" the current page:</p>
+
+<h5 class="example">Example</h5>
+<br>
+<div>
+  <ul class="pagination">
+
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
 
 
+  </ul>
+
+</div>
 
 
+<br>
+<h4>Disabled State</h4>
+<p>The <code>.disabled</code> class is used for links that appear un-clickable:</p>
+
+<div>
+<ul class="pagination">
+  <li class="page-item disabled">
+    <a class="page-link" href="#">Previous</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">1</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">2</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">3</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">Next</a>
+  </li>
+</ul>
+</div>
 
 
+<br>
+<h4>Pagination Sizing</h4>
+<p>Pagination blocks can also be sized to a larger or a smaller size:</p>
+<p>Add class <code>.pagination-lg</code> for larger blocks or <code>.pagination-sm</code> for smaller blocks:</p>
+
+<h5 class="example">Example</h5>
+<div>
+<p>Large:</p>
+<ul class="pagination pagination-lg">
+  <li class="page-item">
+    <a class="page-link" href="#">Previous</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">1</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">2</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">3</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">Next</a>
+  </li>
+</ul>
+
+<p>Default:</p>
+<ul class="pagination">
+  <li class="page-item">
+    <a class="page-link" href="#">Previous</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">1</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">2</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">3</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">Next</a>
+  </li>
+</ul>
+
+<p>Small:</p>
+<ul class="pagination pagination-sm">
+  <li class="page-item">
+    <a class="page-link" href="#">Previous</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">1</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">2</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">3</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">Next</a>
+  </li>
+</ul>
+</div>
+
+<br>
+<h4>Pagination Alignment</h4>
+<p>Use utilitiy classes to change the alignment of the pagination:</p>
+
+<div>
+<ul class="pagination">
+  <li class="page-item">
+    <a class="page-link" href="#">Previous</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="javascript:void(0);">1</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="javascript:void(0);">2</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="javascript:void(0);">Next</a>
+  </li>
+</ul>
+<ul class="pagination justify-content-center">
+  <li class="page-item">
+    <a class="page-link" href="javascript:void(0);">Previous</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="javascript:void(0);">1</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="javascript:void(0);">2</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="javascript:void(0);">Next</a>
+  </li>
+</ul>
+<ul class="pagination justify-content-end">
+  <li class="page-item">
+    <a class="page-link" href="javascript:void(0);">Previous</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="javascript:void(0);">1</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="javascript:void(0);">2</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="javascript:void(0);">Next</a>
+  </li>
+</ul>
+</div>
+
+
+<br>
+<h4>Breadcrumbs</h4>
+<p>Another form for pagination, is breadcrumbs:</p>
+<p>The <code>.breadcrumb</code> and <code>.breadcrumb-item</code> classes indicates the current page's location within a navigational hierarchy:</p>
+
+<h5 class="example">Example</h5>
+
+<div>
+<ul class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="#">Photos</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="#">Summer 2017</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="#">Italy</a>
+  </li>
+  <li class="breadcrumb-item active">Rome</li>
+</ul>
+</div>
 
 
 
@@ -1525,11 +1759,11 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
 </div><!-- container end-->
 
 <div style="height:300px;"></div>
-
+ <a href="#">Top</a>
 <hr>
+
 </body>
  
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 
