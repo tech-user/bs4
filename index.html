@@ -2456,6 +2456,29 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
     <h2>Bootstrap 4 Collapse</h2>
     <br>
     <h4>Basic Collapsible</h4>
+    <p>Collapsibles are useful when you want to hide and show large amount of content:</p>
+
+    <h5 class="example">Example</h5>
+
+    <button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#demo">Simple Collapse</button>
+    <div id="demo" class="collapse">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, odio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe est rem fuga excepturi dolore aspernatur vitae maxime cum nihil voluptates.</div>
+
+<br>
+<br>
+
+<h5 class="example">Example Explained</h5>
+<p>The <code>.collapse</code> class indicates a collapsible element (a &lt;div&gt; in our example); this is the content that will be shown or hidden with a click of a button.</p>
+
+<p>To control (show/hide) the collapsible content, add the <code>data-toggle="collapse"</code> attribute to an &lt;a&gt; or a &lt;button&gt;element. Then add the data-target="#id" attribute to connect the button with the collapsible content (&lt;div id="demo"&gt;).</p>
+
+<br>
+<p><strong>Note:</strong> For <code>&lt;a&gt;</code> elements, you can use the <code>href</code> attribute instead of the <code>data-target</code> attribute:</p>
+<a href="#demo1" class="btn btn-primary" data-toggle="collapse">Simple collapsible</a>
+  <div id="demo1" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
 
 
 
@@ -2471,8 +2494,6 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
 
 
 
-
-    <button class="btn btn-dark" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </div><!-- container end-->
 
 <div style="height:300px;"></div>
@@ -2485,32 +2506,6 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
-
-
-
-
-
-<script>
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("myBtn").style.display = "block";
-        } else {
-            document.getElementById("myBtn").style.display = "none";
-        }
-    }
-    
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-    </script>
-
-
 
 
 </html>
