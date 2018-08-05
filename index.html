@@ -36,6 +36,8 @@
     <li>Chapter-14 : <a href="#cards">Cards</a></li>
     <li>Chapter-15 : <a href="#dropdowns">Dropdowns</a></li>
     <li>Chapter-16 : <a href="#collapse">Collapse</a></li>
+    <li>Chapter-17 : <a href="#navs">Navs</a></li>
+    <li>Chapter-16 : <a href="#collapse">Collapse</a></li>
 
   </ul>
 </div>
@@ -2479,13 +2481,331 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   </div>
+<br><br>
+  <p>By default, the collapsible content is hidden. However, you can add the <code>.show</code> class to show the content by default:</p>
+
+<button class="btn btn-primary" data-toggle="collapse" data-target="#demo2">Collapsible</button>
+
+<div id="demo2" class="collapse show">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae tenetur in saepe consectetur distinctio, autem placeat minima quaerat cupiditate alias!
+</div>
+<br>
+<h4>Accordion</h4>
+<p> <strong>Note:</strong> Use the <code>data-parent</code> attribute to make sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+
+
+<br>
+<h5 class="example">Example</h5>
+<div id="accordion">
+  <div class="card">
+    <div class="card-header">
+      <a class="card-link" data-toggle="collapse" href="#collapseOne">
+        Collapsible Group Item #1
+      </a>
+    </div>
+    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+      <div class="card-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+      Collapsible Group Item #2
+    </a>
+    </div>
+    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+        Collapsible Group Item #3
+      </a>
+    </div>
+    <div id="collapseThree" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <h3 id="navs">Chapter-17</h3>
+    <hr>
+    <h2>Bootstrap 4 Navs</h2>
+    <br>
+    <h4>Nav Menus</h4>
+<p>If you want to create a simple horizontal menu, add the <code>.nav</code> class to a <code>&lt;ul&gt;</code> element, followed by <code>&lt;.nav-item&gt;</code> for each <code>&lt;li&gt;</code> and add the <code>.nav-link</code> class to their links:</p>
+
+<br>
+<h5 class="example">Example</h5>
+<div>
+  <ul class="nav">
+      <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link disabled">Disabled Link</a></li>
+
+  </ul>
+</div>
+
+
+<br>
+<br>
+
+<h4>Aligned Nav</h4>
+<p>Add the <code>.justify-content-center</code> class to center the nav, and the <code>.justify-content-end</code> class to right-align the nav.</p>
+
+<h5 class="example">Example</h5>
+<div>
+  <ul class="nav justify-content-center">
+      <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link disabled">Disabled Link</a></li>
+
+  </ul>
+</div>
+
+<br>
+<br>
+
+<div>
+  <ul class="nav justify-content-end">
+      <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link disabled">Disabled Link</a></li>
+
+  </ul>
+</div>
+
+<br><br>
+<h4>Vertical Nav</h4>
+<p>Add the <code>.flex-column</code> class to create a vertical nav:</p>
+<h5 class="example">Example</h5>
+
+<div>
+  <ul class="nav flex-column">
+      <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link disabled">Disabled Link</a></li>
+
+  </ul>
+</div>
+
+
+<br>
+<br>
+<h4>Tabs</h4>
+<p>Turn the nav menu into navigation tabs with the <code>.nav-tabs</code> class. Add the active class to the active/current link. If you want the tabs to be togglable, see the last example on this page.</p>
+
+<h5 class="example">Example</h5>
+<br>
+<div>
+  <ul class="nav nav-tabs">
+      <li class="nav-item"><a href="#" class="nav-link active">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link disabled">Disabled Link</a></li>
+
+  </ul>
+</div>
+
+<br><br>
+<br>
+
+<h4>Pills</h4>
+<p>Turn the nav menu into navigation pills with the <code>.nav-pills</code> class. If you want the pills to be togglable, see the last example on this page.</p>
+
+
+<h5 class="example">Example</h5>
+<br>
+<div>
+  <ul class="nav nav-pills">
+      <li class="nav-item"><a href="#" class="nav-link active">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link disabled">Disabled Link</a></li>
+
+  </ul>
+</div>
+
+
+<br>
+<br>
+<br>
+<h4>Justified Tabs/pills</h4>
+<p>Justify the tabs/pills with the <code>.nav-justified</code> class (equal width):</p>
+
+<br>
+<br>
+<div>
+  <ul class="nav nav-pills nav-justified">
+      <li class="nav-item"><a href="#" class="nav-link active">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link disabled">Disabled Link</a></li>
+
+  </ul>
+</div>
+
+<br>
+<br>
+<div>
+  <ul class="nav nav-tabs nav-justified">
+      <li class="nav-item"><a href="#" class="nav-link active">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+      <li class="nav-item"><a href="#" class="nav-link disabled">Disabled Link</a></li>
+
+  </ul>
+</div>
+
+<br>
+<br>
+<br>
+
+<h4>Pills with Dropdown</h4>
+<h5 class="example">Example</h5>
+<br>
+<div>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul> 
+</div>
+
+
+<br>
+<br>
+
+<h4>Tabs with Dropdown</h4>
+
+<div>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul> 
+</div>
+
+<br><br>
+<br><br>
+<h4>Toggleable / Dynamic Tabs</h4>
+<p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a <div> element with class .tab-content.</p>
+
+<h5 class="example">Example</h5>
+<br>
+<ul class="nav nav-tabs" role="tablist">
+
+    <li class="nav-item"><a href="#home" class="nav-link active" data-toggle="tab">Home</a></li>
+    <li class="nav-item"><a href="#about" class="nav-link" data-toggle="tab">About</a></li>
+    <li class="nav-item"><a href="#contact" class="nav-link" data-toggle="tab">Contact</a></li>
+
+</ul>
+
+
+
+<div class="tab-content"><!-- Tab Panes-->
+
+    <div id="home" class="container tab-pane active">
+        <h3>Home</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam cumque fuga atque ipsam nostrum ex quibusdam sunt, repudiandae totam maiores.</p>
+    </div>
+
+    <div id="about" class="container tab-pane fade">
+        <h3>About</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam cumque fuga atque ipsam nostrum ex quibusdam sunt, repudiandae totam maiores.</p>
+    </div>
+
+    <div id="contact" class="container tab-pane fade">
+        <h3>Contact</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam cumque fuga atque ipsam nostrum ex quibusdam sunt, repudiandae totam maiores.</p>
+    </div>
+
+
+</div><!--tab content end-->
+
+
+<br>
+<br>
+
+<h4>Toggleable / Dynamic Pills</h4>
+<p>The same code applies to pills; only change the data-toggle attribute to <code>data-toggle="pill"</code>:</p>
+
+<ul class="nav nav-pills" role="tablist">
+
+    <li class="nav-item"><a href="#home1" class="nav-link active" data-toggle="pill">Home</a></li>
+    <li class="nav-item"><a href="#about1" class="nav-link" data-toggle="pill">About</a></li>
+    <li class="nav-item"><a href="#contact1" class="nav-link" data-toggle="pill">Contact</a></li>
+
+</ul>
 
 
 
 
+<div class="tab-content"><!-- Tab Panes-->
+
+  <div id="home1" class="container tab-pane active">
+      <h3>Home</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam cumque fuga atque ipsam nostrum ex quibusdam sunt, repudiandae totam maiores.</p>
+  </div>
+
+  <div id="about1" class="container tab-pane fade">
+      <h3>About</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam cumque fuga atque ipsam nostrum ex quibusdam sunt, repudiandae totam maiores.</p>
+  </div>
+
+  <div id="contact1" class="container tab-pane fade">
+      <h3>Contact</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam cumque fuga atque ipsam nostrum ex quibusdam sunt, repudiandae totam maiores.</p>
+  </div>
 
 
-
+</div><!--tab content end-->
 
 
 
