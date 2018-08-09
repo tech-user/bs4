@@ -40,6 +40,7 @@
     <li>Chapter-18 : <a href="#navbars">Navigation Bar</a></li>
     <li>Chapter-19 : <a href="#forms">Forms</a></li>
     <li>Chapter-20 : <a href="#forminputs">Forms Inputs</a></li>
+    <li>Chapter-21 : <a href="#inputgroups">Inputs Group</a></li>
 
   </ul>
 </div>
@@ -47,7 +48,7 @@
 <br>
 
   <div class="container">
-    
+
    <hr>
 <h3 id="whatisbs">Chapter-1</h3>
 <hr>
@@ -767,6 +768,7 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
 
 <div class="table-responsive">
   <table class="table">
+
     <thead>
       <tr>
         <th>#</th>
@@ -1536,7 +1538,7 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
   <div class="progress-bar bg-warning" style="width:10%">10% Warning</div>
   <div class="progress-bar bg-danger" style="width:20%">20% Danger</div>
   <div class="progress-bar bg-secondary" style="width:30%">30% Unlocated</div>
-  
+
 </div>
 
 
@@ -1823,7 +1825,7 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
     <a href="#" class="list-group-item disabled">Disabled item</a>
     <a href="#" class="list-group-item disabled">Disabled item</a>
     <a href="#" class="list-group-item">Third item</a>
-  </div> 
+  </div>
 
   <br>
   <h4>Flush / Remove Borders</h4>
@@ -1838,7 +1840,7 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
           <li class="list-group-item">Second item</li>
           <li class="list-group-item">Third item</li>
           <li class="list-group-item">Fourth item</li>
-        </ul> 
+        </ul>
   </div>
 
 
@@ -1880,7 +1882,7 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
     <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Primary item</a>
     <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Dark item</a>
     <a href="#" class="list-group-item list-group-item-action list-group-item-light">Light item</a>
-  </div> 
+  </div>
 
 <br>
 
@@ -1904,7 +1906,7 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
           Junk
           <span class="badge badge-primary badge-pill">99</span>
         </li>
-      </ul> 
+      </ul>
 </div>
 
 
@@ -2338,7 +2340,7 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
     <a class="dropdown-item" href="#">Link 2</a>
     <a class="dropdown-item-text" href="#">Text Link</a>
     <span class="dropdown-item-text" href="#">Just Text</span>
-  </div> 
+  </div>
 </div>
 
 
@@ -2378,7 +2380,7 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
       <a class="dropdown-item" href="#">Link 2</a>
     </div>
   </div>
-  
+
   <div class="btn-group">
     <button type="button" class="btn btn-secondary">Secondary</button>
     <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
@@ -2703,7 +2705,7 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
     <li class="nav-item">
       <a class="nav-link disabled" href="#">Disabled</a>
     </li>
-  </ul> 
+  </ul>
 </div>
 
 
@@ -2731,7 +2733,7 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
     <li class="nav-item">
       <a class="nav-link disabled" href="#">Disabled</a>
     </li>
-  </ul> 
+  </ul>
 </div>
 
 <br><br>
@@ -2850,9 +2852,9 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
       <li class="nav-item"><a href="#" class="nav-link">Link-1</a></li>
       <li class="nav-item"><a href="#" class="nav-link">Link-2</a></li>
       <li class="nav-item"><a href="#" class="nav-link">Link-3</a></li>
-    
+
     </ul>
-    
+
 </nav>
 
 <br><br>
@@ -3423,7 +3425,7 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
 </div>
 <div class="form-check">
   <label class="form-check-label">
-    <input type="checkbox" class="form-check-input" value="">Option 2 
+    <input type="checkbox" class="form-check-input" value="">Option 2
   </label>
 </div>
 <div class="form-check">
@@ -3458,7 +3460,326 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
   <label class="form-check-label">
     <input type="checkbox" class="form-check-input" value="" disabled>Option 3
   </label>
+</div>
+
+
+<br><br>
+<br>
+<h4>Bootstrap Radio Buttons</h4>
+<p>Radio buttons are used if you want to limit the user to just one selection from a list of preset options.</p>
+
+<h5 class="example">Example</h5>
+
+<div class="form-check">
+    <label class="form-check-lable">
+      <input type="radio" class="form-check-input" name="optradio">Option 1
+    </label>
+</div>
+<div class="form-check">
+  <label class="form-check-lable">
+    <input type="radio" class="form-check-input" name="optradio">Option 2
+  </label>
+</div>
+<div class="form-check">
+  <label class="form-check-lable">
+    <input type="radio" class="form-check-input" name="optradio" disabled>Option 3
+  </label>
+</div>
+
+
+<br><br>
+<p>As with checkboxes, use the <code>.form-check-inline</code> class if you want the radio buttons to appear on the same line:</p>
+
+<br>
+<h5 class="example">Example</h5>
+<div class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="optradio">Option 1
+  </label>
+</div>
+<div class="form-check-inline">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="optradio">Option 2
+  </label>
+</div>
+<div class="form-check-inline disabled">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="optradio" disabled>Option 3
+  </label>
 </div> 
+
+<br>
+<br>
+<br>
+<h4>Bootstrap Select List</h4>
+<p>Select lists are used if you want to allow the user to pick from <code>multiple options</code>.</p>
+
+<h5 class="example">Example</h5>
+<div>
+<form action="/action_page.php">
+  <div class="form-group">
+    <label for="sel1">Select list (select one):</label>
+    <select class="form-control" id="sel1" name="sellist1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+    <br>
+    <label for="sel2">Mutiple select list (hold shift to select more than one):</label>
+    <select multiple class="form-control" id="sel2" name="sellist2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+
+<br><br>
+<h4>Form Control Sizing</h4>
+<p>Change the size of the form control with <code>.form-control-sm</code> or <code>.form-control-lg</code>:</p>
+<br>
+<h5 class="example">Example</h5>
+<form action="/action_page.php">
+  <div class="form-group">
+    <input type="text" class="form-control form-control-sm" placeholder="Small form control" name="text1">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Default form control" name="text2">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control form-control-lg" placeholder="Large form control" name="text3">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<br><br>
+
+<h4>Form Control with Plain Text</h4>
+<p>Use the <code>.form-control-plaintext</code> if you want to style the input field as plain text:</p> <br>
+<h5 class="example">Example</h5>
+
+<div>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Default form control" name="text1">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control-plaintext" placeholder="Form control with plain text" name="text2">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<br><br>
+<h4>Form Control File and Range</h4>
+<p>Add the <code>.form-control-range</code> class to <code>input type"range"</code> or <code>.form-control-file</code> to <code>input type"file"</code> to style a range control or a file field with full-width:</p>
+
+<h5 class="example">Example</h5>
+
+<form action="">
+  <div class="form-group"><input type="range" class="form-control-range" name="range"></div>
+
+   <div class="form-group">
+     <input type="file" class="form-control-file" name="file">
+   </div> 
+   <button type="submit" class="btn btn-info">Upload</button>
+</form>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<h3 id="inputgroups">Chapter-21</h3>
+<hr>
+<h2>Bootstrap 4 Input Group</h2>
+<br>
+<h4>Input Groups</h4>
+<p>The <code>.input-group</code> class is a container to enhance an input by adding an icon, text or a button in front or behind the input field as a "help text".</p>
+
+<p>Use <code>.input-group-prepend</code> to add the help text in front of the input, and <code>.input-group-append</code> to add it behind the input.</p>
+
+<p>At last, add the <code>.input-group-text</code> class to style the specified help text.</p>
+
+<h5 class="example">Example</h5>
+
+<div>
+  <form action="">
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text">@</span>
+      </div>
+      <input type="text" class="form-control" id="usr" name="username" placeholder="Username">
+    </div>
+
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" id="mail" name="email" placeholder="Your Email">
+      <div class="input-group-append">
+      <span class="input-group-text">@example.com</span></div>
+    </div>
+<button type="submit"  class="btn btn-dark">Login</button>
+  </form>
+</div>
+
+
+<br>
+<br>
+
+<h4>Input Group Sizing</h4>
+<p>Use the <code>.input-group-sm</code> class for small input groups and <code>.input-group-lg</code> for large inputs groups:</p>
+<h5 class="example">Example</h5>
+
+<form>
+  <div class="input-group mb-3 input-group-sm">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Small</span>
+    </div>
+    <input type="text" class="form-control">
+  </div>
+</form>
+<form>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Default</span>
+    </div>
+    <input type="text" class="form-control">
+  </div>
+</form>
+<form>
+  <div class="input-group mb-3 input-group-lg">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Large</span>
+    </div>
+    <input type="text" class="form-control">
+  </div>
+</form>
+
+<br><br>
+<h4>Multiple Inputs and Helpers</h4>
+<p>Add multiple <code>inputs</code> or <code>addons</code>:</p>
+
+<h5 class="example">Example</h5>
+<form>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Person</span>
+    </div>
+    <input type="text" class="form-control" placeholder="First Name">
+    <input type="text" class="form-control" placeholder="Last Name">
+  </div>  
+</form>
+
+<form>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">One</span>
+      <span class="input-group-text">Two</span>
+      <span class="input-group-text">Three</span>
+    </div>
+    <input type="text" class="form-control">
+  </div>
+</form>
+
+<br>br
+
+<h4>Input Group with Checkboxes and Radios</h4>
+<p>You can also use checkboxes or radio buttons instead of text:</p>
+
+<div>
+  <form>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <div class="input-group-text">
+          <input type="checkbox"> 
+        </div>
+      </div>
+      <input type="text" class="form-control" placeholder="Some text">
+    </div>
+  </form>
+  
+  <form>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <div class="input-group-text">
+          <input type="radio"> 
+        </div>
+      </div>
+      <input type="text" class="form-control" placeholder="Some text">
+    </div>
+  </form>
+</div>
+
+
+<br><br>
+<h4>Input Group Buttons</h4>
+<h5 class="example">Example</h5>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <button class="btn btn-outline-secondary" type="button">Basic Button</button>  
+  </div>
+  <input type="text" class="form-control" placeholder="Some text">
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Search">
+  <div class="input-group-append">
+    <button class="btn btn-success" type="submit">Go</button>  
+   </div>
+</div>
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Something clever..">
+  <div class="input-group-append">
+    <button class="btn btn-primary" type="button">OK</button>  
+    <button class="btn btn-danger" type="button">Cancel</button>  
+   </div>
+</div>
+
+<br><br>
+<h4>Input Group with Dropdown Button</h4>
+<p>Add a dropdown button in the input group. Note that you don't need the <code>.dropdown</code> wrapper, as you normally would.</p>
+
+<div>
+  <form>
+    <div class="input-group mt-3 mb-3">
+      <div class="input-group-prepend">
+        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </div>
+      <input type="text" class="form-control" placeholder="Username">
+    </div>
+  </form>
+</div>
+
+<br>
+<br>
+
+<h4>Input Group Labels</h4>
+<p>Put labels outside of the input group, and remember that the value of the for attribute should match the id of the input.</p>
+
+<form>
+  <label for="demo">Write your email here:</label>
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Email" id="demo" name="email">
+    <div class="input-group-append">
+      <span class="input-group-text">@example.com</span>
+    </div>
+  </div>
+</form>
 
 
 
@@ -3470,7 +3791,7 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
 <hr>
 
 </body>
- 
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 
