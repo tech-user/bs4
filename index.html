@@ -4317,10 +4317,36 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
 <h2>Bootstrap 4 Tooltip</h2>
 <p>The Tooltip component is small pop-up box that appears when the user moves the mouse pointer over an element:</p>
 <h4>Create Tooltip</h4>
+<p>To create a tooltip, add the <code>data-toggle="tooltip"</code> attribute to an element.</p>
+<p>Use the <code>title</code> attribute to specify the text that should be displayed inside the tooltip:</p>
+<p><strong>Note:</strong> Tooltips must be initialized with jQuery: select the specified element and call the <code>tooltip()</code> method.</p>
 
+<h5 class="example">Example</h5>
+<div>
+<a href="#" data-toggle="tooltip" title="Hooray">Hover me</a>
+</div>
+<script>
+  $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+  });
+  </script>
 
+<br><br>
+<h4>Positioning Tooltips</h4>
+<p>By default, the tooltip will appear on top of the element.</p>
+<p>Use the <code>data-placement</code> attribute to set the position of the tooltip on top, bottom, left or the right side of the element:</p>
 
-
+<div>
+  <a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Top</a>
+  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Bottom</a>
+  <a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Left</a>
+  <a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Right</a>
+</div>
+<script>
+  $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+  });
+  </script>
 
 
 
