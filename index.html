@@ -43,6 +43,7 @@
     <li>Chapter-21 : <a href="#inputgroups">Inputs Group</a></li>
     <li>Chapter-22 : <a href="#customforms">Custom Forms</a></li>
     <li>Chapter-23 : <a href="#carousel">Carousel</a></li>
+    <li>Chapter-24 : <a href="#modal">Modal</a></li>
 
   </ul>
 </div>
@@ -4108,6 +4109,201 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
   </a>
 </div>
 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<h3 id="modal">Chapter-24</h3>
+<hr>
+<h2>Bootstrap 4 Modal</h2>
+<h4>Modal</h4>
+<p>The Modal component is a <code>dialog box/popup window</code> that is displayed on top of the current page:</p>
+<br>
+<h4>Create a Modal</h4>
+<br>
+
+
+<!-- Button to open the modal-->
+
+<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#mymodal">Open modal</button>
+
+<!-- Modal-->
+<div class="modal" id="mymodal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+          <!--modal header-->
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button class="close" type="button" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!--modal body-->
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum obcaecati perferendis quaerat delectus animi corrupti explicabo voluptatibus quod mollitia soluta.
+          </div>
+
+          <!-- Modal footer-->
+            <div class="modal-footer">
+              <button class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+      </div>
+    </div>
+
+</div>
+
+<br>
+<br>
+<br>
+
+<h4>Add animation</h4>
+<p>Use the <code>.fade</code> class to add a fading effect when opening and closing the modal:</p>
+
+<h5 class="example">Example</h5>
+
+<!-- Button to open the modal-->
+
+<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#mymodalfade">Open modal</button>
+
+<!-- Modal-->
+<div class="modal fade" id="mymodalfade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+          <!--modal header-->
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button class="close" type="button" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!--modal body-->
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum obcaecati perferendis quaerat delectus animi corrupti explicabo voluptatibus quod mollitia soluta.
+          </div>
+
+          <!-- Modal footer-->
+            <div class="modal-footer">
+              <button class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+      </div>
+    </div>
+
+</div>
+
+
+<br><br>
+<br>
+
+<h4>Modal Size</h4>
+<p>Change the size of the modal by adding the <code>.modal-sm class</code> for small modals or  <code>.modal-lg</code> class for large modals.</p>
+<p>Add the size class to the <code>&lt;div&gt;</code> element with class <code>.modal-dialog</code>:</p>
+
+  <h5 class="example">Small Modal</h5>
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModalsm">
+    Open modal
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModalsm">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, veritatis.
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+
+  <br><br><br>
+
+  <h5 class="example">Large Modal</h5>
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModallg">
+    Open modal
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModallg">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis perspiciatis veniam quas inventore, consectetur vitae?
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <h4>Centered Modal</h4>
+  <p>Center the modal vertically and horizontally within the page, with the <code>.modal-dialog-centered</code> class:</p>
+
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalcenter">
+    Open modal
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModalcenter">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nulla. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, voluptatibus impedit nisi tempora accusantium neque veniam accusamus ipsum assumenda magni.
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
 
 
 
