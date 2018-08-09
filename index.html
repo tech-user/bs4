@@ -39,6 +39,7 @@
     <li>Chapter-17 : <a href="#navs">Navs</a></li>
     <li>Chapter-18 : <a href="#navbars">Navigation Bar</a></li>
     <li>Chapter-19 : <a href="#forms">Forms</a></li>
+    <li>Chapter-20 : <a href="#forminputs">Forms Inputs</a></li>
 
   </ul>
 </div>
@@ -3242,7 +3243,6 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
 </div>
 
 <br>
-
 <br>
 <br>
 <br>
@@ -3268,6 +3268,199 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
 <h4>Bootstrap 4 Stacked Form</h4>
 <p>The following example creates a stacked form with two input fields, one checkbox, and a submit button.</p>
 <p>Add a wrapper element with <code>.form-group</code>, around each form control, to ensure proper margins:</p>
+
+
+<br>
+
+<h5 class="example">Example</h5>
+
+<div>
+  <form action="">
+      <div class="form-group">
+         <label for="email">Email Address:</label>
+         <input type="email" class="form-control" id="email" placeholder="enter your email address">
+      </div>
+
+
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="enter your password">
+      </div>
+      <div class="form-group form-check">
+
+        <label for="checkbox" class="form-check-label">
+          <input type="checkbox" class="form-check-input">Remember me
+        </label>
+
+      </div>
+
+      <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+
+</div>
+
+<br>
+
+<h4>Bootstrap Inline Form</h4>
+<p>In an inline form, all of the elements are inline and left-aligned.</p>
+
+<p class="spl">Note: This only applies to forms within viewports that are at least 576px wide. On screens smaller than 576px, it will stack
+  horizontally.</p>
+<p> Add class <code>.form-inline</code> to the <code>&lt;form&gt;</code>  element </p>
+
+<h5 class="example">Example</h5>
+<div>
+  <form action="" class="form-inline">
+     <div class="form-group">
+         <label for="email">Email Address:</label>
+         <input type="email" class="form-control" id="email" placeholder="enter your email address">
+      </div>
+
+
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="enter your password">
+      </div>
+      <div class="form-group form-check">
+
+        <label for="checkbox" class="form-check-label">
+          <input type="checkbox" class="form-check-input">Remember me
+        </label>
+
+      </div>
+
+      <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+
+</div>
+
+<br>
+<br>
+
+<h4>Inline Form with Utilities</h4>
+<p>The inline form above feels "compressed", and will look much better with Bootstrap's spacing utilities. The following example adds a right margin (<code>.mr-sm-2</code>) to each input on all devices (small and up). And a margin bottom class (<code>.mb-2</code>) is used to style the input field when it breaks (goes from horizontal to vertical due to not enough space/width):</p>
+
+<h5 class="example">Example</h5>
+
+<div>
+  <form class="form-inline" action="/action_page.php">
+  <label for="email" class="mr-sm-2">Email address:</label>
+  <input type="email" class="form-control mb-2 mr-sm-2" id="email">
+  <label for="pwd" class="mr-sm-2">Password:</label>
+  <input type="password" class="form-control mb-2 mr-sm-2" id="pwd">
+  <div class="form-check mb-2 mr-sm-2">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox"> Remember me
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary mb-2">Submit</button>
+</form>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<h3 id="forminputs">Chapter-20</h3>
+<hr>
+<h2>Bootstrap 4 Form Inputs</h2>
+<br>
+<h4>Supported Form Controls</h4>
+
+<div>
+  <ul>
+    <li>input</li>
+    <li>textarea</li>
+    <li>checkbox</li>
+    <li>radio</li>
+    <li>select</li>
+  </ul>
+</div>
+
+ <h4>Bootstrap Input</h4>
+ <p>Bootstrap supports all the HTML5 input types: text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, and color. </p>
+
+ <br>
+ <p>The following example contains two input elements; one of <code> type="text"</code> and one of <code>type="password"</code>. As we mentioned in the Forms chapter, we use the <code>.form-control</code> class to style inputs with full-width and proper padding, etc:</p>
+
+<h5 class="example">Example</h5>
+
+<div>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="usr">Name:</label>
+      <input type="text" class="form-control" id="usr" name="username">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" name="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<br>
+<h4>Bootstrap Textarea</h4>
+
+<div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea id="comment" rows="5" class="form-control"></textarea>
+
+</div>
+
+<br>
+<br>
+
+<h4>Bootstrap Checkboxes</h4>
+<p>Checkboxes are used if you want the user to select any number of options from a list of preset options.</p>
+<p>The following example contains three checkboxes. The last option is disabled:</p>
+
+<div class="form-check">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" value="">Option 1
+      </label>
+</div>
+<div class="form-check">
+  <label class="form-check-label">
+    <input type="checkbox" class="form-check-input" value="">Option 2 
+  </label>
+</div>
+<div class="form-check">
+  <label class="form-check-label">
+    <input type="checkbox" class="form-check-input" value="" disabled>Option 3
+  </label>
+</div>
+<br>
+<br>
+<h5 class="example">Example explained</h5>
+<p>Use a wrapper element with <code>class="form-check"</code> to ensure proper margins for labels and checkboxes.</p>
+
+<p>Add the <code>.form-check-label</code> class to label elements, and <code>.form-check-input</code> to style checkboxes properly inside the <code>.form-check container</code>.</p>
+
+<br><br>
+<h4>Inline Checkboxes</h4>
+<p>Use the <code>.form-check-inline</code> class if you want the checkboxes to appear on the same line:</p>
+
+<br>
+<h5 class="example">Example</h5>
+<div class="form-check-inline">
+  <label class="form-check-label">
+    <input type="checkbox" class="form-check-input" value="">Option 1
+  </label>
+</div>
+<div class="form-check-inline">
+  <label class="form-check-label">
+    <input type="checkbox" class="form-check-input" value="">Option 2
+  </label>
+</div>
+<div class="form-check-inline disabled">
+  <label class="form-check-label">
+    <input type="checkbox" class="form-check-input" value="" disabled>Option 3
+  </label>
+</div> 
+
+
 
 
 </div><!-- container end-->
