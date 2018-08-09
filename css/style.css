@@ -7,6 +7,15 @@
 
 } */
 
+.border{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin: 6px;
+}
+
+
+
 h1{
   color:#6a2bb3;
 
