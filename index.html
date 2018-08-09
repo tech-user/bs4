@@ -3846,6 +3846,135 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
   </form>
 </div>
 
+<br>
+<br>
+
+<h4>Inline Custom Form Controls</h4>
+<p>If you want the custom form controls to sit side by side (inline), add the <code>.custom-control-inline</code> to the wrapper/container:</p>
+
+<h5 class="example">Example</h5>
+<div>
+  <form action="/action_page.php">
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio1" name="example1">
+      <label class="custom-control-label" for="customRadio1">Custom radio</label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio2" name="example2">
+      <label class="custom-control-label" for="customRadio2">Custom radio</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<br>
+<br>
+<br>
+
+<h4>Custom Select Menu</h4>
+<p>To create a custom select menu, add the <code>.custom-select</code> class to the <code>&lt;select&gt;</code> element:</p>
+
+<h5 class="example">Example</h5>
+
+<div>
+  <form action="/action_page.php">
+    <select name="cars" class="custom-select mb-3">
+      <option selected>Custom Select Menu</option>
+      <option value="volvo">Volvo</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+    <button type="submit" class="btn btn-dark">Submit</button>
+  </form>
+</div>
+
+<br>
+<br>
+
+<h4>Custom Select Menu Size</h4>
+<p>Use the <code>.custom-select-sm</code> class to create a small select menu and the <code>.custom-select-lg</code> class for a large one:</p>
+<br>
+<div>
+  <form>
+    <select class="custom-select custom-select-sm mb-3">
+      <option selected>Small Custom Select Menu</option>
+      <option value="volvo">Volvo</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+    <select name="cars" class="custom-select custom-select mb-3">
+      <option selected>Default Custom Select Menu</option>
+      <option value="volvo">Volvo</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+    <select name="cars" class="custom-select custom-select-lg mb-3">
+      <option selected>Large Custom Select Menu</option>
+      <option value="volvo">Volvo</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+  </form>
+</div>
+
+<br><br>
+
+<h4>Custom Range</h4>
+<p>To create a custom select menu, add the <code>.custom-range</code> class to an input with <code>type="range"</code>:</p>
+
+<h5 class="example">Example</h5>
+
+<div>
+  <form action="">
+    <label for="customrange">Custom range</label>
+      <input type="range" class="custom-range" id="customrange" name="points1">
+    
+    <label for="defaultrange">Default range</label>
+    <input type="range" id="defaultrange" name="points2">
+    <br>
+      <button class="btn btn-secondary" type="submit">Submit</button>
+  </form>
+</div>
+
+
+<br>
+<br>
+
+<h4>Custom File Upload</h4>
+<p>To create a custom file upload, wrap a container element with a class of <code>.custom-file</code> around the input with type="file". Then add the <code>.custom-control-input</code> to it.</p>
+
+<h5 class="example">Exampple</h5>
+
+<div>
+  <form action="/action_page.php">
+    <p>Custom file:</p>
+    <div class="custom-file mb-3">
+      <input type="file" class="custom-file-input" id="customFile" name="filename">
+      <label class="custom-file-label" for="customFile">Choose file</label>
+    </div>
+    
+    <p>Default file:</p>
+    <input type="file" id="myFile" name="filename2">
+  
+    <div class="mt-3">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
