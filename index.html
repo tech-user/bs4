@@ -41,6 +41,7 @@
     <li>Chapter-19 : <a href="#forms">Forms</a></li>
     <li>Chapter-20 : <a href="#forminputs">Forms Inputs</a></li>
     <li>Chapter-21 : <a href="#inputgroups">Inputs Group</a></li>
+    <li>Chapter-22 : <a href="#customforms">Custom Forms</a></li>
 
   </ul>
 </div>
@@ -3780,6 +3781,77 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
     </div>
   </div>
 </form>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<h3 id="customforms">Chapter-22</h3>
+<hr>
+<h2>Bootstrap 4 Custom Forms</h2>
+<br>
+<h4 class="spl">Custom Forms</h4>
+<p>Bootstrap 4 comes with customized form elements, that are meant to replace browser defaults:</p>
+
+<br>
+<br>
+<h4>Custom Checkbox</h4>
+<p>To create a custom checkbox, wrap a container element, like <code>&lt;div&gt;</code>, with a class of <code>.custom-control</code> and <code>.custom-checkbox</code> around the checkbox. Then add the <code>.custom-control-input</code> to the input with <code>type="checkbox"</code>.</p>
+
+<p><strong>Tip:</strong> If you use labels for accompanying text, add the <code>.custom-control-label</code> class to it. Note that the value of the for attribute should match the id of the checkbox:</p>
+
+<br>
+<h5 class="example">Example</h5>
+
+<div>
+  <form action="">
+      <div class="custom-control custom-checkbox mb-3">
+        <input type="checkbox" class="custom-control-input" id="customcheck" name="example1">
+        <label for="customcheck" class="custom-control-label">Custom Checkbox</label>
+      </div>
+
+      <input type="checkbox" id="defaultcheck" name="example2">
+      <label for="defaultcheck">Default Checkbox</label>
+      <br>
+      <button class="btn btn-dark" type="submit">Submit</button>
+  </form>
+</div>
+
+
+
+<br>
+<br>
+
+<h4>Custom Radio buttons</h4>
+
+<p>To create a custom radio button, wrap a container element, like <code>&lt;div&gt;</code>, with a class of <code>.custom-control</code> and <code>.custom-radio</code> around the radio button. Then add the <code>.custom-control-input</code> to the input with <code>type="radio"</code>.</p>
+
+<p><strong>Tip:</strong> If you use labels for accompanying text, add the <code>.custom-control-label</code> class to it. Note that the value of the for attribute should match the id of the radio:</p>
+
+<h5 class="example">Example</h5>
+<div>
+  <form action="">
+    <div class="custom-control custom-radio">
+        <input type="radio" class="custom-control-input" id="customradio" name="exp1">
+        <label for="customradio" class="custom-control-label">Custom radio</label>
+        <input type="radio" id="defaultradio" name="exp2">
+        <label for="defaultradio">Default radio</label>
+    </div>
+      <br>
+      <button class="btn btn-info" type="submit">Submit</button>
+
+
+  </form>
+</div>
+
+
+
+
+
+
+
 
 
 
