@@ -29,7 +29,7 @@
 <div class="container">
   <h3>Popover Example</h3>
   <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
-</div>
+
 
 <script>
 $(document).ready(function(){
@@ -37,5 +37,24 @@ $(document).ready(function(){
 });
 </script>
 
+
+
+<br><br>
+
+<a href="#" title="Header" data-toggle="popover2" data-placement="top" data-content="Content">Top</a>
+  <a href="#" title="Header" data-toggle="popover2" data-placement="bottom" data-content="Content">Bottom</a>
+  <a href="#" title="Header" data-toggle="popover2" data-placement="left" data-content="Content">Left</a>
+  <a href="#" title="Header" data-toggle="popover2" data-placement="right" data-content="Content">Right</a>
+
+
+  <script>
+    $(document).ready(function(){
+        $('[data-toggle="popover2"]').popover();   
+    });
+    </script>
+
+
+</div>
+<!-- container end-->
 </body>
 </html>
