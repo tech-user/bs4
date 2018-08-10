@@ -4723,6 +4723,146 @@ the table rows (<code>&lt;tr&gt;</code>) or table cells (<code>&lt;td&gt;</code>
 
 
 
+<br><br>
+
+<h4>Visibility</h4>
+<p>Use the <code>.visible</code> or <code>.invisible</code> classes to control the visibility of elements. <br> <strong>Note:</strong> These classes do not change the CSS display value. They only add <code>visibility:visible</code> or <code>visibility:hidden</code>:</p>
+
+<h5 class="example">Example</h5>
+<div class="visible bg-success">I am visible</div>
+<div class="invisible bg-warning">I am invisible</div>
+
+<br>
+<br>
+
+<h4>Position</h4>
+<p>Use the <code>.fixed-top</code> class to make any element fixed/stay at the top of the page:</p>
+<p>Use the <code>.fixed-bottom</code> class to make any element fixed/stay at the bottom of the page:</p>
+
+<br>
+<p>Use the <code>.sticky-top</code> class to make any element fixed/stay at the top of the page when you scroll past it. Note: This class does not work in IE11 and earlier (will treat it as <code>position:relative</code>).</p>
+
+<h5 class="example">Example</h5>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+  <a class="navbar-brand" href="#">Logo</a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container-fluid"><br>
+  <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+  <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+  <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+  <p>Some example text. Some example text. Some example text. Some example text. Some example text.</p>
+</div>
+
+<br><br>
+<h4>Close icon</h4>
+<p>Use the <code>.close</code> class to style a close icon. This is often used for alerts and modals. Note that we use the <code>&amp;times;</code> symbol to create the actual icon (a better lookiong "x"). Also note that it floats right by default:</p>
+
+<h5 class="example">Example</h5>
+<hr>
+<div class="clearfix">
+        <button class="close" type="button">&times;</button>
+</div>
+<hr>
+
+<br>
+<br>
+
+<h4>Screenreaders</h4>
+<p>Use the <code>.sr-only</code> class to hide an element on all devices, except screen readers:</p>
+
+<h5 class="example">Example</h5>
+<div>
+  <span class="sr-only">it will be hidden on all screens except for screen readers.</span>
+</div>
+
+<br>
+<br>
+
+<h4>Colors</h4>
+<p>The classes for text colors are: <code>.text-muted</code>, <code>.text-primary</code>, <code>.text-success</code>, <code>.text-info</code>, <code>.text-warning</code>, <code>.text-danger</code>, <code>.text-secondary</code>, <code>.text-white</code>, <code>.text-dark</code>, <code>.text-body</code> (default body color/often black) and <code>.text-light</code>:</p>
+<br>
+<h5 class="example">Example</h5>
+<div>
+<p>Use the contextual classes to provide "meaning through colors":</p>
+  <p class="text-muted">This text is muted.</p>
+  <p class="text-primary">This text is important.</p>
+  <p class="text-success">This text indicates success.</p>
+  <p class="text-info">This text represents some information.</p>
+  <p class="text-warning">This text represents a warning.</p>
+  <p class="text-danger">This text represents danger.</p>
+  <p class="text-secondary">Secondary text.</p>
+  <p class="text-dark">This text is dark grey.</p>
+  <p class="text-body">Default body color (often black).</p>
+  <p class="text-light">This text is light grey (on white background).</p>
+  <p class="text-white">This text is white (on white background).</p>
+</div>
+<br>
+<p>Contextual text classes can also be used on links, which will add a darker hover color:</p>
+
+<div>
+  <p>Hover over the links.</p>
+  <a href="#" class="text-muted">Muted link.</a>
+  <a href="#" class="text-primary">Primary link.</a>
+  <a href="#" class="text-success">Success link.</a>
+  <a href="#" class="text-info">Info link.</a>
+  <a href="#" class="text-warning">Warning link.</a>
+  <a href="#" class="text-danger">Danger link.</a>
+  <a href="#" class="text-secondary">Secondary link.</a>
+  <a href="#" class="text-dark">Dark grey link.</a>
+  <a href="#" class="text-body">Body/black link.</a>
+  <a href="#" class="text-light">Light grey link.</a>
+</div>
+
+<br>
+<br>
+
+<h4>Background Colors</h4>
+
+<p>The classes for background colors are: <code>.bg-primary</code>, <code>.bg-success</code>, <code>.bg-info</code>, <code>.bg-warning</code>, <code>.bg-danger</code>, <code>.bg-secondary</code>, <code>.bg-dark</code> and <code>.bg-light</code>.</p>
+
+<br>
+<h5 class="example">Example</h5>
+<div>
+  <p class="bg-primary text-white">This text is important.</p>
+  <p class="bg-success text-white">This text indicates success.</p>
+  <p class="bg-info text-white">This text represents some information.</p>
+  <p class="bg-warning text-white">This text represents a warning.</p>
+  <p class="bg-danger text-white">This text represents danger.</p>
+  <p class="bg-secondary text-white">Secondary background color.</p>
+  <p class="bg-dark text-white">Dark grey background color.</p>
+  <p class="bg-light text-dark">Light grey background color.</p>
+</div>
+
+<br>
+<br>
+<h4>Block Elements</h4>
+<p>To make an element into a block element, add the <code>.d-block</code> class. Use any of the <code>d-*-block</code> classes to control WHEN the element should be a block element on a specific screen width:</p>
+
+<br>
+<h5 class="example">Example</h5>
+<div>
+<span class="d-block bg-success">d-block</span>
+<span class="d-sm-block bg-success">d-sm-block</span>
+<span class="d-md-block bg-success">d-md-block</span>
+<span class="d-lg-block bg-success">d-lg-block</span>
+<span class="d-xl-block bg-success">d-xl-block</span>
+</div>
+
+
+
+
+
+
 
 
 
