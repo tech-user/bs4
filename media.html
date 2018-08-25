@@ -13,23 +13,85 @@
 
 </head>
 <body>
-<div class="container">
+<div class="container"><!-- Container Start-->
+
 <h4>Basic Media Object</h4>
 <p>To create a media object, add the <code>.media</code> class to a container element, and place media content inside a child container with the <code>.media-body</code> class. Add padding and margins as needed, with the spacing utilities:</p>
 
 <h5 class="example">Example</h5><br>
-<div class="container mt-3">
-  <h2>Media Object</h2>
-  <p>Create a media object with the .media and .media-body classes:</p>
-  <div class="media border p-3">
+<div class="container mt-3"><!-- Container mt-3-->
+  <h3>Media Object</h3>
+  <p>Create a media object with the <code>.media</code> and <code>.media-body</code> classes:</p>
+
+  <div class="media border p-3"><!--media-->
     <img src="assets/img_avatar3.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-    <div class="media-body">
+    <div class="media-body"><!--media body-->
       <h4>John Doe <small><i>Posted on February 19, 2016</i></small></h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
-    </div>
+    </div><!--media body-->
+  </div><!--media-->
+</div><!-- Container mt-3-->
+
+<br>
+<p>To create a media object, add the <code>.media</code> class to a container element, and place media content inside a child container with the <code>.media-body</code> class. Add padding and margins as needed, with the spacing utilities:</p>
+
+
+
+
+<br>
+<br>
+<br>
+
+<h3>Nested Media Objects</h3>
+<p>Media objects can also be nested (a media object inside a media object):</p>
+<p>To nest media objects, place a new <code>.media</code> container inside the <code>.media-body</code> container:</p>
+
+
+  <div class="media border p-3">
+      <img src="assets/img_avatar3.png" alt="" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+      <div class="media-body">
+        <h4>Ganesh Vadla <small><i>Posted on August 25, 2018</i></small></h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore et voluptatibus magnam architecto tenetur a saepe dicta numquam dolor dignissimos.</p>
+        <div class="media p-3">
+            <img src="assets/img_avatar3.png" alt="Jane Doe" class="mr-3 mt-3 rounded-circle" style="width:45px;">
+            <div class="media-body">
+              <h4>Jane Doe <small><i>Posted on February 20 2016</i></small></h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia nobis fuga recusandae qui dignissimos rem quis voluptatem, cum eum et.</p>
+
+      </div>
+
   </div>
 </div>
 </div>
+
+<br><br>
+
+<h3>Right-Aligned Media Image</h3>
+<p>To right-align the media image, add the image after the <code>.media-body</code>container:</p>
+
+<h5>Example</h5>
+
+<div class="media border p-3">
+    <div class="media-body">
+      <h4>John Doe <small><i>Posted on February 19, 2016</i></small></h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quam adipisci iste iure, excepturi possimus dolores rem itaque velit beatae.</p>
+    </div>
+    <img src="assets/img_avatar3.png" alt="John Doe" class="ml-3 mt-3 rounded-circle" style="width:60px;">
+  </div>
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+</div> <!-- Container End-->
+
 
 
 
