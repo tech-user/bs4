@@ -15,12 +15,12 @@
 <body>
 <div class="container"><!-- Container Start-->
 
-<h4>Basic Media Object</h4>
+<h3 class="text-info">Basic Media Object</h3>
 <p>To create a media object, add the <code>.media</code> class to a container element, and place media content inside a child container with the <code>.media-body</code> class. Add padding and margins as needed, with the spacing utilities:</p>
 
 <h5 class="example">Example</h5><br>
 <div class="container mt-3"><!-- Container mt-3-->
-  <h3>Media Object</h3>
+  <h3 class="text-info">Media Object</h3>
   <p>Create a media object with the <code>.media</code> and <code>.media-body</code> classes:</p>
 
   <div class="media border p-3"><!--media-->
@@ -42,7 +42,7 @@
 <br>
 <br>
 
-<h3>Nested Media Objects</h3>
+<h3 class="text-info">Nested Media Objects</h3>
 <p>Media objects can also be nested (a media object inside a media object):</p>
 <p>To nest media objects, place a new <code>.media</code> container inside the <code>.media-body</code> container:</p>
 
@@ -66,7 +66,7 @@
 
 <br><br>
 
-<h3>Right-Aligned Media Image</h3>
+<h3 class="text-info">Right-Aligned Media Image</h3>
 <p>To right-align the media image, add the image after the <code>.media-body</code>container:</p>
 
 <h5>Example</h5>
@@ -80,8 +80,57 @@
   </div>
 
 
+  <br>
+  <br>
+<h3 class="text-info">Top, Middle or Bottom Alignment</h3>
+
+<p>Use the flex utilities, <code>align-self-*</code> classes to place the media object on the top, middle or at the bottom:</p>
+
+<h5 class="text-warning">Example</h5>
+
+<div class="media mt-3">
+  <img src="assets/img_avatar1.png" alt="" class="align-self-start mr-3" style="width:60px;">
+  <div class="media-body">
+
+      <h4 class="text-danger">Media Middle</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nesciunt dolores numquam modi officiis odio dolorem asperiores pariatur voluptatem exercitationem.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, beatae.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ratione hic corporis reiciendis voluptatibus! Omnis, fugit aliquid. Sequi architecto sapiente, itaque dolorem ex beatae maxime reiciendis doloremque vitae unde dolor.</p>
+
+  </div>
+
+</div>
 
 
+<br>
+<br>
+
+<div class="media mt-3">
+  <img src="assets/img_avatar1.png" alt="" class="align-self-center mr-3" style="width:60px;">
+  <div class="media-body">
+
+      <h4 class="text-danger">Media Middle</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nesciunt dolores numquam modi officiis odio dolorem asperiores pariatur voluptatem exercitationem.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, beatae.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ratione hic corporis reiciendis voluptatibus! Omnis, fugit aliquid. Sequi architecto sapiente, itaque dolorem ex beatae maxime reiciendis doloremque vitae unde dolor.</p>
+
+  </div>
+
+</div>
+<br>
+<br>
+<div class="media mt-3">
+  <img src="assets/img_avatar1.png" alt="" class="align-self-end mr-3" style="width:60px;">
+  <div class="media-body">
+
+      <h4 class="text-danger">Media Middle</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, nesciunt dolores numquam modi officiis odio dolorem asperiores pariatur voluptatem exercitationem.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, beatae.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ratione hic corporis reiciendis voluptatibus! Omnis, fugit aliquid. Sequi architecto sapiente, itaque dolorem ex beatae maxime reiciendis doloremque vitae unde dolor.</p>
+
+  </div>
+
+</div>
 
 
 
