@@ -5835,6 +5835,492 @@ $(document).ready(function(){
 
 <p><strong>Tip:</strong> Each class scales up, so if you wish to set the same widths for <code>sm</code> and <code>md</code>, you only need to specify <code>sm</code>.</p>
 
+<br>
+<h4>Basic Grid Structure</h4><br>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-6 bg-warning">50%</div>
+      <div class="col-sm-6 bg-info">50%</div>
+    </div>
+<br>
+    <div class="row">
+      <div class="col-sm-4 bg-warning">33.33%</div>
+      <div class="col-sm-4 bg-info">33.33%</div>
+      <div class="col-sm-4 bg-warning">33.33%</div>
+    </div>
+
+<br>
+
+    <div class="row">
+      <div class="col-sm bg-warning">25%</div>
+      <div class="col-sm bg-info">25%</div>
+      <div class="col-sm bg-warning">25%</div>
+      <div class="col-sm bg-info">25%</div>
+    </div>
+<br>
+<div class="row">
+  <div class="col bg-warning">25%</div>
+  <div class="col bg-info">25%</div>
+  <div class="col bg-warning">25%</div>
+  <div class="col bg-info">25%</div>
+</div>
+
+</div>
+
+<br>
+<br>
+
+
+<h4>Grid Options</h4><br>
+
+<p>The following table summarizes how the Bootstrap 4 grid system works across 
+different screen sizes:</p>
+<div class="table-responsive">
+<table class="table table-bordered notranslate">
+  <tbody><tr>
+    <th style="width:20%;">&nbsp;</th>
+    <th style="width:17%;">Extra small (&lt;576px)</th>
+    <th style="width:16%;">Small (&gt;=576px)</th>
+    <th style="width:16%;">Medium (&gt;=768px)</th>
+    <th style="width:16%;">Large (&gt;=992px)</th>
+    <th style="width:16%;">Extra Large (&gt;=1200px)</th>
+  </tr>
+  <tr>
+    <td><strong>Class prefix</strong></td>
+    <td><code>.col-</code></td>
+    <td><code>.col-sm-</code></td>
+    <td><code>.col-md-</code></td>
+    <td><code>.col-lg-</code></td>
+    <td><code>.col-xl-</code></td>
+  </tr>
+  <tr>
+    <td><strong>Grid behaviour</strong></td>
+    <td>Horizontal at all times</td>
+    <td>Collapsed to start, horizontal above breakpoints</td>
+    <td>Collapsed to start, horizontal above breakpoints</td>
+    <td>Collapsed to start, horizontal above breakpoints</td>        
+    <td>Collapsed to start, horizontal above breakpoints</td>        
+  </tr>
+  <tr>
+    <td><strong>Container width</strong></td>
+    <td>None (auto)</td>
+    <td>540px</td>
+    <td>720px</td>
+    <td>960px</td>
+    <td>1140px</td>
+  </tr>
+  <tr>
+    <td><strong>Suitable for</strong></td>
+    <td>Portrait phones</td>
+    <td>Landscape phones</td>
+    <td>Tablets</td>
+    <td>Laptops</td>
+    <td>Laptops and Desktops</td>    
+  </tr>
+  <tr>
+    <td><strong># of columns</strong></td>
+    <td>12</td>
+    <td>12</td>
+    <td>12</td>
+    <td>12</td>    
+    <td>12</td>    
+  </tr>
+  <tr>
+    <td><strong>Gutter width</strong></td>
+    <td>30px (15px on each side of a column)</td>
+    <td>30px (15px on each side of a column)</td>
+    <td>30px (15px on each side of a column)</td>
+    <td>30px (15px on each side of a column)</td>
+    <td>30px (15px on each side of a column)</td>
+  </tr>
+  <tr>
+    <td><strong>Nestable</strong></td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td><strong>Offsets</strong></td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td><strong>Column ordering</strong></td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
+  </tr>
+</tbody></table>
+</div>
+<br>
+<br>
+<h4>Auto Layout Columns</h4>
+<p>In Bootstrap 4, there is an easy way to create equal width columns for all devices: just remove the number from <code>.col-size-*</code> and only use the <code>.col-size</code> class on a specified number of <strong>col elements</strong>. Bootstrap will recognize how many columns there are, and each column will get the same width. The size classes determines when the columns should be responsive:</p>
+
+<h5 class="example">Example</h5>
+<p>Two columns: 50% width on all screens, except for extra small (100% width on screens less than <strong>576px</strong> wide)</p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm bg-info">1 of 2</div>
+    <div class="col-sm bg-warning">2 of 2</div>
+  </div>
+</div>
+
+<br>
+<p>Four columns: 25% width on all screens, except for extra small (100% width on screens less than <strong>576px</strong> wide)</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm bg-info">1 of 4</div>
+      <div class="col-sm bg-warning">2 of 4</div>
+      <div class="col-sm bg-info">3 of 4</div>
+      <div class="col-sm bg-warning">4 of 4</div>
+    </div>  
+  </div>
+
+
+<br>
+<br>
+<h4>Bootstrap 4 Grid Extra Small</h4>
+<p>Assume we have a simple layout with two columns. We want the columns to split 25%/75% for ALL devices.</p>
+
+<h5 class="example">Example</h5>
+<div class="container">
+  <div class="row">
+    <div class="col-3 bg-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus dolore repellendus sit minima dolorum sed totam neque quasi dignissimos!</div>
+  
+  <div class="col-9 bg-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nam nihil pariatur voluptate soluta impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quos harum culpa pariatur temporibus. Delectus non obcaecati, beatae ducimus inventore atque nemo? Suscipit debitis, reprehenderit blanditiis odit corporis odio laboriosam?</div>
+
+</div>
+</div>
+
+<br>
+<p>For a 33.3%/66.6% split, you would use <code>.col-4</code> and <code>.col-8</code> (and for a 50%/50% split, you would use <code>.col-6</code> and <code>.col-6</code>):</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-4 bg-warning">33.3% <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, fugiat!</div>
+    <div class="col-8 bg-info">66.6% <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis iste officiis ducimus illo deserunt quidem animi corrupti error dignissimos aperiam.</div>
+  </div>
+</div>
+<br>
+<br>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-6 bg-warning">50% <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ullam ducimus optio iure placeat obcaecati quam aut possimus doloribus asperiores.</div>
+    <div class="col-6 bg-info">50% <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ullam ducimus optio iure placeat obcaecati quam aut possimus doloribus asperiores.</div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<h4>Bootstrap 4 Grid Small</h4>
+<p>Small devices are defined as having a screen width from <strong>576 pixels to 767 pixels</strong>. <br>
+  For small devices we will use the <code>.col-sm-*</code> classes.
+</p>
+
+<h5 class="example">Example</h5>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3 bg-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="col-sm-9 bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, consectetur.</div>
+  </div>
+</div>
+<br>
+<br>
+
+<h4>Auto Layout Small Columns </h4>
+<div class="container">
+  <div class="row">
+    <div class="col-sm bg-warning">1 of 2</div>
+    <div class="col-sm bg-info">2 of 2</div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<h4>Bootstrap 4 Grid Medium</h4>
+<div>
+  <table class="table table-striped table-bordered notranslate">
+    <tbody><tr>
+      <th style="width:20%;">&nbsp;</th>
+      <th style="width:17%;">Extra small</th>
+      <th style="width:16%;">Small</th>
+      <th class="bg-secondary" style="width:16%;">Medium</th>
+      <th style="width:16%;">Large</th>
+      <th style="width:16%;">Extra Large</th>
+    </tr>
+    <tr>
+      <td><strong>Class prefix</strong></td>
+      <td><code>.col-</code></td>
+      <td><code>.col-sm-</code></td>
+      <td class="bg-secondary"><code><span class="text-light">.col-md-</span></code></td>
+      <td><code>.col-lg-</code></td>
+      <td><code>.col-xl-</code></td>
+    </tr>
+    <tr>
+      <td><strong>Screen width</strong></td>
+      <td>&lt;576px</td>
+      <td>&gt;=576px</td>
+      <td class="bg-secondary">&gt;=768px</td>
+      <td>&gt;=992px</td>
+      <td>&gt;=1200px</td>
+    </tr>
+  </tbody></table>
+</div>
+
+  <p class="notes">Medium devices are defined as having a screen width from 768 pixels to 991 pixels.</p>
+<p>For medium devices we will use the <code>.col-md-*</code> classes:</p>
+
+<h5 class="example">Example</h5>
+
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-md-6 bg-success">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quaerat doloremque harum obcaecati error consectetur, expedita similique, vitae accusantium voluptatibus numquam laborum possimus sapiente aperiam eius ea deleniti. Sed, quaerat?
+      </div>
+
+      <div class="col-sm-9 col-md-6 bg-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam necessitatibus, provident ipsa id explicabo repellendus impedit, hic corporis temporibus ea accusamus nesciunt, quo voluptatum delectus dolores omnis. Vitae, perspiciatis asperiores.</div>
+
+
+    </div>
+
+</div>
+
+<br>
+<br>
+
+<h4>Using Only Medium</h4>
+<p>In the example below, we only specify the <code>.col-md-6</code> class (without <code>.col-sm-*</code>). This means that medium, large and extra large devices will split 50%/50% - because the class scales up. However, for small and extra small devices, it will stack vertically (100% width):</p>
+
+<div class="row">
+  <div class="col-md-6 bg-info">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quod, doloremque hic autem, tempora at repellat non quae eos qui numquam, ducimus culpa perferendis architecto vitae ullam. Mollitia, cum maiores.</p>
+  </div>
+  <div class="col-md-6 bg-warning">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quod, doloremque hic autem, tempora at repellat non quae eos qui numquam, ducimus culpa perferendis architecto vitae ullam. Mollitia, cum maiores.</p>
+  </div>
+</div>
+
+<br>
+<br>
+
+<h4>Auto Layout Columns</h4>
+<div class="container">
+ 
+    <div class="row">
+      <div class="col-md bg-success">1 of 2</div>
+      <div class="col-md bg-warning">2 of 2</div>
+    </div>  
+  </div>
+  <br>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md bg-success">1 of 4</div>
+      <div class="col-md bg-warning">2 of 4</div>
+      <div class="col-md bg-success">3 of 4</div>
+      <div class="col-md bg-warning">4 of 4</div>
+    </div>  
+  
+</div>
+<br>
+<br>
+
+<h4>Bootstrap 4 Grid - Large</h4>
+
+<div>
+  <table class="table table-striped table-bordered notranslate">
+    <tbody><tr>
+      <th style="width:20%;">&nbsp;</th>
+      <th style="width:17%;">Extra small</th>
+      <th style="width:16%;">Small</th>
+      <th style="width:16%;">Medium</th>
+      <th  class="bg-secondary" style="width:16%;">Large</th>
+      <th style="width:16%;">Extra Large</th>
+    </tr>
+    <tr>
+      <td><strong>Class prefix</strong></td>
+      <td><code>.col-</code></td>
+      <td><code>.col-sm-</code></td>
+      <td><code>.col-md-</code></td>
+      <td class="bg-secondary"><code><span class="text-light">.col-lg-</span></code></td>
+      <td><code>.col-xl-</code></td>
+    </tr>
+    <tr>
+      <td><strong>Screen width</strong></td>
+      <td>&lt;576px</td>
+      <td>&gt;=576px</td>
+      <td>&gt;=768px</td>
+      <td class="bg-secondary">&gt;=992px</td>
+      <td>&gt;=1200px</td>
+    </tr>
+  </tbody></table>
+</div>
+
+<br>
+<h5 class="example">Example</h5>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3 col-md-6 col-lg-4 bg-success">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+    <div class="col-sm-9 col-md-6 col-lg-8 bg-warning">
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<h4>Using Only Large</h4>
+<p>In the example below, we only specify the <code>.col-lg-6</code> class (without <code>.col-md-*</code> and/or <code>.col-sm-*</code>). This means that large and xlarge devices will split 50%/50%. However, for medium, small AND extra small devices, it will stack vertically (100% width):</p>
+
+
+<h5 class="example">Example</h5>
+<div class="row">
+  <div class="col-lg-6 bg-primary">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+  <div class="col-lg-6 bg-secondary">
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+  </div>
+</div>
+<br>
+<br>
+
+<h4>Auto Layout Columns</h4>
+<div class="row">
+  <div class="col-lg bg-success">1 of 2</div>
+  <div class="col-lg bg-warning">2 of 2</div>
+</div>  
+</div>
+<br>
+
+<div class="container">
+<div class="row">
+  <div class="col-lg bg-success">1 of 4</div>
+  <div class="col-lg bg-warning">2 of 4</div>
+  <div class="col-lg bg-success">3 of 4</div>
+  <div class="col-lg bg-warning">4 of 4</div>
+</div> 
+
+<br>
+<br>
+
+<h4>Bootstrap 4 Grid - Extra Large</h4>
+
+<div>
+  <table class="table table-striped table-bordered notranslate">
+    <tbody><tr>
+      <th style="width:20%;">&nbsp;</th>
+      <th style="width:17%;">Extra small</th>
+      <th style="width:16%;">Small</th>
+      <th style="width:16%;">Medium</th>
+      <th style="width:16%;">Large</th>
+      <th  class="bg-secondary" style="width:16%;">Extra Large</th>
+    </tr>
+    <tr>
+      <td><strong>Class prefix</strong></td>
+      <td><code>.col-</code></td>
+      <td><code>.col-sm-</code></td>
+      <td><code>.col-md-</code></td>
+      <td><code>.col-lg-</code></td>
+      <td class="bg-secondary"><code><span class="text-light">.col-xl-</span></code></td>
+    </tr>
+    <tr>
+      <td><strong>Screen width</strong></td>
+      <td>&lt;576px</td>
+      <td>&gt;=576px</td>
+      <td>&gt;=768px</td>
+      <td>&gt;=992px</td>
+      <td class="bg-secondary">&gt;=1200px</td>
+    </tr>
+  </tbody></table>
+</div>
+<br>
+<p class="notes"> Extra large devices are defined as having a screen width from 1200 pixels and above.</p>
+
+<p>For xlarge devices we will use the <code>.col-xl-*</code> classes:</p>
+
+<br>
+<h5 class="example">Example</h5>
+<div class="row">
+  <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 bg-success">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+  <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 bg-warning">
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+  </div>
+</div>
+
+<br>
+<br>
+
+<h4>Using Only XLarge</h4>
+<p>In the example below, we only specify the <code>.col-xl-6</code> class (without <code>.col-lg-*</code>, <code>.col-md-*</code> and/or <code>.col-sm-*</code>). This means that xlarge devices will split 50%/50%. However, for large, medium, small AND extra small devices, it will stack vertically (100% width):</p>
+
+<br>
+<h5 class="example">Example</h5>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-xl-6 bg-info">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni incidunt ea hic ullam officiis doloremque accusantium totam quaerat dolorum? Soluta unde nesciunt fugit odit doloribus id? Facere, temporibus. Aliquid?
+    </div>
+    <div class="col-xl-6 bg-warning">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ipsam in commodi culpa deserunt aperiam facilis! Nam, vitae possimus debitis hic quasi quia consectetur illum, voluptas ullam, consequuntur sed magnam.
+    </div>
+
+  </div>
+</div>
+
+
+<br>
+<br>
+
+
+<h4>Auto Layout Columns</h4>
+<div class="row">
+  <div class="col-xl bg-success">1 of 2</div>
+  <div class="col-xl bg-warning">2 of 2</div>
+</div>
+
+<br>
+<div class="row">
+  <div class="col-xl bg-success">1 of 4</div>
+  <div class="col-xl bg-warning">2 of 4</div>
+  <div class="col-xl bg-success">4 of 4</div>
+  <div class="col-xl bg-warning">4 of 4</div>
+</div>
+
+
+<br>
+<br>
+<br>
+
+<p>For More Example Reference : <a href="https://www.w3schools.com/bootstrap4/bootstrap_grid_examples.asp" target="_blank">Click here</a></p>
+
+
+
+
+
 
 <div style="height: 300px;"></div>
 </div><!-- container end-->
